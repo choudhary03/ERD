@@ -1,0 +1,33 @@
+﻿
+
+@model Refreshment_Dashboard.Models.Enrollment
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Enrollment</h4>
+<hr />
+
+<form method ="post">
+  
+    <select asp-for ="EmployeeID" asp-items ="@ViewBag.TypeDropDown">
+           <option selected>--Choose Employee--</option>
+       </select>
+
+        <select asp-for ="ActivityID" asp-items ="@ViewBag.TypeDropDown2">
+           <option selected>--Assign Activity--</option>
+       </select>
+       <br /><br />
+
+   <button type ="submit" class= "btn btn-primary">
+       Create
+   </button>
+   
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
