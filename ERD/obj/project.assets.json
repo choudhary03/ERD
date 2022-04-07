@@ -9596,11 +9596,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj",
+      "projectUniqueName": "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\ERD.csproj",
       "projectName": "ERD",
-      "projectPath": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj",
+      "projectPath": "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\ERD.csproj",
       "packagesPath": "C:\\Users\\Radhe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\obj\\",
+      "outputPath": "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Radhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
