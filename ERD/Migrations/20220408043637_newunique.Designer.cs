@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Refreshment_Dashboard.Models;
 
@@ -10,9 +11,10 @@ using Refreshment_Dashboard.Models;
 namespace ERD.Migrations
 {
     [DbContext(typeof(ERDContext))]
-    partial class ERDContextModelSnapshot : ModelSnapshot
+    [Migration("20220408043637_newunique")]
+    partial class newunique
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

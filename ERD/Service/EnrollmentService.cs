@@ -9,22 +9,22 @@ using Refreshment_Dashboard.Models;
 
 namespace ERD.Services
 {
-    public class ActivitiesService
+    public class EnrollmentService
     {
         private readonly ERDContext _context;
 
-        public ActivitiesService(ERDContext context)
+        public EnrollmentService(ERDContext context)
         {
             _context = context;
         }
 
 
 
-        public bool AddAnActivity(Activity activities)
+        public bool AddAnEnrollment(Enrollment enrollment)
         {
             try
             {
-                _context.Activitys.Add(activities);
+                _context.Enrollments.Add(enrollment);
                 _context.SaveChanges();
                 return true;
 
@@ -35,15 +35,16 @@ namespace ERD.Services
             }
         }
 
-        public bool DeleteAnActivity(Activity activities)
+        public bool DeleteAnEnrollment(Enrollment enrollment)
         {
             try
             {
 
-                var emp = _context.Activitys.Where(x => x.ID == activities.ID).FirstOrDefault();
+                var emp = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
+
                 if (emp != null)
                 {
-                    _context.Activitys.Remove(emp);
+                    _context.Enrollments.Remove(emp);
                     _context.SaveChanges();
                     return true;
                 }
@@ -59,15 +60,16 @@ namespace ERD.Services
             }
         }
 
-        public bool UpdateAnActivity(Activity activities)
+        public bool UpdateAnEnrollment(Enrollment enrollment)
         {
             try
             {
-                var emp = _context.Activitys.Where(x => x.ID == activities.ID).FirstOrDefault();
+                var emp = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
                 if (emp != null)
                 {
-                    Activity ServicesActivity = new Activity();
-                    ServicesActivity.Name = activities.Name;
+                    Enrollment ServicesEnrollment = new Enrollment();
+                    ServicesEnrollment.ActivityID = enrollment.ActivityID;
+                    ServicesEnrollment.EmployeeID = enrollment.EmployeeID;
 
                     _context.SaveChanges();
                     return true;
@@ -84,14 +86,14 @@ namespace ERD.Services
             }
         }
 
-        public Activity GetActivityDetails(int id)
+        public Enrollment GetEnrollmentDetails(int id)
         {
             try
             {
-                var emp = _context.Activitys.Where(x => x.ID == id).FirstOrDefault();
-                if (emp != null)
+                var enroll = _context.Enrollments.Where(x => x.ID == id).FirstOrDefault();
+                if (enroll != null)
                 {
-                    return emp;
+                    return enroll;
                 }
                 else
                 {
@@ -104,11 +106,11 @@ namespace ERD.Services
             }
         }
 
-        public IList<Activity> ListOfActivities()
+        public IList<Enrollment> ListOfEnrollment()
         {
             try
             {
-                List<Activity> emp = _context.Activitys.ToList();
+                List<Enrollment> emp = _context.Enrollments.ToList();
                 if (emp != null)
                 {
                     return emp;

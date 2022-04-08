@@ -4,6 +4,9 @@
 
 @{
     ViewData["Title"] = "Create";
+    var employeeListDetails = ViewBag.TypeDropDown;
+    var activityListDetails = ViewBag.TypeDropDown2;
+    //var EmployeeListDD = TempData["EmployeeList"];
 }
 
 <h1>Create</h1>
@@ -13,13 +16,29 @@
 
 <form method ="post">
   
-    <select asp-for ="EmployeeID" asp-items ="@ViewBag.TypeDropDown">
+    <select asp-for ="EmployeeID" >
            <option selected>--Choose Employee--</option>
+           @foreach (var item in employeeListDetails)
+                    {
+                        <option value="@item.ID">@item.Firstname</option>
+                    }
        </select>
 
-        <select asp-for ="ActivityID" asp-items ="@ViewBag.TypeDropDown2">
+        <select asp-for ="ActivityID" >
            <option selected>--Assign Activity--</option>
+           @foreach (var item in activityListDetails)
+                    {
+                        <option value="@item.ID">@item.Name</option>
+                    }
        </select>
+        <p style = "color:red;">
+           @*@ViewBag.ExistingActivity*@
+            @Html.Label("",Convert.ToString((string)ViewBag.ExistingActivityError))
+       </p> 
+       <p style = "color:red;">
+           @*@ViewBag.ExceedingActivity*@
+           @Html.Label("",Convert.ToString((string)ViewBag.ExceedingActivityError))
+       </p> 
        <br /><br />
 
    <button type ="submit" class= "btn btn-primary">

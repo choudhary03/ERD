@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\ERD.csproj": {}
+    "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\ERD.csproj": {
+    "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\ERD.csproj",
+        "projectUniqueName": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj",
         "projectName": "ERD",
-        "projectPath": "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\ERD.csproj",
+        "projectPath": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj",
         "packagesPath": "C:\\Users\\Radhe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Radhe\\Documents\\GitHub\\ERD\\ERD\\obj\\",
+        "outputPath": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Radhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,6 +57,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "Serilog.Extensions.Logging.File": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Swashbuckle.AspNetCore.Swagger": {
               "target": "Package",

@@ -5,6 +5,8 @@ namespace ERD.ViewModels
     public class EnrollmentDetailViewModel
     {
         public Employee employees { get; set; }
-        public string activity { get; set; } 
+        public List <Activity> activityList { get; set; }
+        
     }
 }
+ 

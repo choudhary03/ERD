@@ -55,11 +55,18 @@ namespace ERD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Firstname,Lastname,Email,Phone")] Employee employee)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(employee);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                if (ModelState.IsValid)
+                {
+                    _context.Add(employee);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ExistingEmailError = "Email Id already present.!";
             }
             return View(employee);
         }

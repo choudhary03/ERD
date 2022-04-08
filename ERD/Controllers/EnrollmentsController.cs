@@ -2,26 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+//using ERD.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
+using Microsoft.Extensions.Logging;
 
 namespace ERD.Controllers
 {
     public class EnrollmentsController : Controller
     {
+        private readonly ILogger<EnrollmentsController> _logger;
         private readonly ERDContext _context;
-
-        public EnrollmentsController(ERDContext context)
+        public string Message { get; set; } = string.Empty;
+        public EnrollmentsController(ERDContext context, ILogger<EnrollmentsController> logger)
         {
             _context = context;
+            _logger = logger;
         }
+
 
         // GET: Enrollments
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Enrollments.Include(x=>x.Employee).Include(x=>x.Activity).ToListAsync());
+            return View(await _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToListAsync());
         }
 
         // GET: Enrollments/Details/5
@@ -38,48 +43,112 @@ namespace ERD.Controllers
             {
                 return NotFound();
             }
-
             return View(enrollment);
         }
+
+
 
         // GET: Enrollments/Create
         public IActionResult Create()
         {
-            IEnumerable<SelectListItem> TypeDropDown = _context.Employees.Select(i => new SelectListItem
-            {
-                Text = i.Firstname,
-                Value = i.ID.ToString()
-            });
-            IEnumerable<SelectListItem> TypeDropDown2 = _context.Activitys.Select(i => new SelectListItem
-            {
-                Text = i.Name,
-                Value = i.ID.ToString()
-            });
+            var TypeDropDown = _context.Employees.ToList();
+            var TypeDropDown2 = _context.Activitys.ToList();
 
             ViewBag.TypeDropDown = TypeDropDown;
             ViewBag.TypeDropDown2 = TypeDropDown2;
+
+            //TempData["EmployeeList"] = TypeDropDown;
+
             return View();
         }
 
         // POST: Enrollments/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create ( Enrollment enrollment)
+        public ActionResult Create(Enrollment enrollment)
         {
-            if (ModelState.IsValid)
-            {
-                var count = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID).Count();
-                if(count<4)
-                {
-                    _context.Add(enrollment);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                    return RedirectToAction(nameof(Index));
+            //if (ModelState.IsValid)
+            //{
+            //    var enrollmentList=_context.Enrollments.Where(x=> x.EmployeeID==enrollment.EmployeeID).ToList();
+            //    foreach(var item in enrollmentList)
+            //    {
+            //        if(item.ActivityID==enrollment.ActivityID)
+            //        {
+            //            return RedirectToAction("Index");
+            //        }
+            //    }
 
+            //    var count = enrollmentList.Count();
+            //    if (count < 4)
+            //    {
+            //        _context.Add(enrollment);
+            //        _context.SaveChanges();
+            //        return RedirectToAction(nameof(Index));
+            //    }
+            //    else
+
+            //        return RedirectToAction(nameof(Index));
+
+            //}
+            //return View(enrollment);
+
+            //TempData["ExistingActivity"] = "Employee already enrolled in this activity!";
+            //TempData["ExceedingActivity"] = "You cannot select more than 4 Activity";
+
+            //var exceptionHandlerPathFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
+            //_logger.LogError($"The path {exceptionHandlerPathFeature.Path} " + $"threw an exception {exceptionHandlerPathFeature.Error}");
+            //return View("Error");
+
+
+            try
+            {
+
+                if (ModelState.IsValid)
+                {
+                    var count = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID).Count();
+
+
+                    if (count < 4)
+                    {
+                        var count2 = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID && x.ActivityID == enrollment.ActivityID).Count();
+                        if (count2 == 0)
+                        {
+                            _context.Enrollments.Add(enrollment);
+                            _context.SaveChanges();
+                            return RedirectToAction(nameof(Index));
+                        }
+                        else
+                        {
+
+
+                            ViewBag.ExistingActivityError = "Employee already enrolled in this activity!";
+                            //TempData["ExistingActivity"] = TempData["EmployeeList"];
+                            //return View(enrollment);
+
+                        }
+                    }
+                    else
+                    {
+
+                        ViewBag.ExceedingActivityError = "You cannot select more than 4 Activity";
+                        //ViewBag.ExceedingActivity = TempData["ErrorMessage2"];
+
+                    }
+                    var TypeDropDown = _context.Employees.ToList();
+                    var TypeDropDown2 = _context.Activitys.ToList();
+
+                    ViewBag.TypeDropDown = TypeDropDown;
+                    ViewBag.TypeDropDown2 = TypeDropDown2;
+
+                }
+  
+            }
+            catch (Exception ex)
+            {
+                Message = $"About page visited at {DateTime.UtcNow.ToLongTimeString()}";
+                _logger.LogInformation(Message);
+                //_logger.LogInformation(ex.ToString());
             }
             return View(enrollment);
         }
@@ -130,8 +199,11 @@ namespace ERD.Controllers
                         throw;
                     }
                 }
+
+                
                 return RedirectToAction(nameof(Index));
             }
+            //TempData["SucessMessage"] = "Enrollment" + enrollment.ID + "Saved Successfully";
             return View(enrollment);
         }
 

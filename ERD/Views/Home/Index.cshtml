@@ -1,4 +1,4 @@
-﻿@{
+﻿@*@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +6,38 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+*@
+
+@model IEnumerable<ERD.ViewModels.EnrollmentDetailViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<Center><h1>Employee Enrollment Details</h1></Center>
+
+<p>
+    <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enroll An Employee</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>Employee Name</th>
+                <th>Activities Enrolled</th>
+        </tr>
+    </thead>
+    <tbody>
+
+@foreach (var item in Model) {
+            var activityNameList = "";   
+            <tr>
+            <td>@item.employees.Firstname</td>
+            @if(item.activityList.Count > 0)
+            {
+                    activityNameList = string.Join(" , ", item.activityList.Select(x => x.Name));
+                }
+            <td>@activityNameList</td>
+        </tr>
+}
+    </tbody>
+</table>

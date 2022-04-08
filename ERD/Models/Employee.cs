@@ -18,10 +18,12 @@ namespace Refreshment_Dashboard.Models
         public string Lastname { get; set; }
 
         [Required(ErrorMessage = "Required")]
+        [DataType(DataType.EmailAddress, ErrorMessage = "E-mail is not valid")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Required")]
-        public int Phone { get; set; }
+        [RegularExpression(@"^([0-9]{10})$", ErrorMessage = "Invalid Mobile Number.")]
+        public long Phone { get; set; }
 
     }
 }

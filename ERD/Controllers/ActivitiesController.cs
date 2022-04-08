@@ -18,7 +18,7 @@ namespace ERD.Controllers
             _context = context;
         }
 
-        // GET: Activities
+        // Get the list of activities
         public async Task<IActionResult> Index()
         {
             return View(await _context.Activitys.ToListAsync());
@@ -48,6 +48,9 @@ namespace ERD.Controllers
             return View();
         }
 
+
+
+
         // POST: Activities/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -55,11 +58,19 @@ namespace ERD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Name")] Activity activity)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(activity);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+
+                if (ModelState.IsValid)
+                {
+                    _context.Add(activity);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ExistingActivityError = "Activity already present.!";
             }
             return View(activity);
         }

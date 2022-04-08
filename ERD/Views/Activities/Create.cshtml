@@ -19,6 +19,9 @@
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <br/>
+             <p style = "color:red;">
+            @Html.Label("",Convert.ToString((string)ViewBag.ExistingActivityError))
+       </p> 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

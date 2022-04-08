@@ -9,18 +9,18 @@ using Refreshment_Dashboard.Models;
 
 namespace ERD.Services
 {
-    public class EmployeeMasterSL
+    public class EmployeeService
     {
         private readonly ERDContext _context;
 
-        public EmployeeMasterSL(ERDContext context)
+        public EmployeeService(ERDContext context)
         {
             _context = context;
         }
 
 
 
-        public bool CreateEmployee(Employee Employee)
+        public bool AddAnEmployee(Employee Employee)
         {
             try
             {
@@ -35,12 +35,12 @@ namespace ERD.Services
             }
         }
 
-        public bool DeleteEmployee(Employee employeeMaster)
+        public bool DeleteAnEmployee(Employee employee)
         {
             try
             {
 
-                var emp = _context.Employees.Where(x => x.ID == employeeMaster.ID).FirstOrDefault();
+                var emp = _context.Employees.Where(x => x.ID == employee.ID).FirstOrDefault();
                 if (emp != null)
                 {
                     _context.Employees.Remove(emp);
@@ -59,18 +59,18 @@ namespace ERD.Services
             }
         }
 
-        public bool UpdateEmployee(Employee Employee)
+        public bool UpdateAnEmployee(Employee Employee)
         {
             try
             {
                 var emp = _context.Employees.Where(x => x.ID == Employee.ID).FirstOrDefault();
                 if (emp != null)
                 {
-                    Employee ServicesEmp = new Employee();
-                    ServicesEmp.Firstname = Employee.Firstname;
-                    ServicesEmp.Lastname = Employee.Lastname;
-                    ServicesEmp.Email = Employee.Email;
-                    ServicesEmp.Phone = Employee.Phone;
+                    
+                    emp.Firstname = Employee.Firstname;
+                    emp.Lastname = Employee.Lastname;
+                    emp.Email = Employee.Email;
+                    emp.Phone = Employee.Phone;
 
                     _context.SaveChanges();
                     return true;
@@ -87,7 +87,7 @@ namespace ERD.Services
             }
         }
 
-        public Employee GetEmployee(int id)
+        public Employee GetEmployeeDetails(int id)
         {
             try
             {
@@ -107,7 +107,7 @@ namespace ERD.Services
             }
         }
 
-        public IList<Employee> AllEmployee()
+        public IList<Employee> ListOfEmployee()
         {
             try
             {
@@ -125,6 +125,8 @@ namespace ERD.Services
             {
                 return null;
             }
+
+
         }
     }
 }

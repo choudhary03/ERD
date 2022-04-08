@@ -27,6 +27,10 @@
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
+                <br/>
+             <p style = "color:red;">
+            @Html.Label("",Convert.ToString((string)ViewBag.ExistingEmailError))
+       </p> 
             </div>
             <div class="form-group">
                 <label asp-for="Phone" class="control-label"></label>
