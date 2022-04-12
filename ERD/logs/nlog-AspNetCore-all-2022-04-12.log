@@ -1,0 +1,238 @@
+2022-04-12 11:01:28.0720|0|DEBUG|Program|init main 
+2022-04-12 11:04:20.2569|0|DEBUG|Program|init main 
+2022-04-12 11:04:57.3387|0|DEBUG|Program|init main 
+2022-04-12 11:10:28.8167|0|DEBUG|Program|init main 
+2022-04-12 11:16:18.8296|0|DEBUG|Program|init main 
+2022-04-12 11:16:21.8036|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 11:16:21.8660|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 11:16:21.8743|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 11:16:21.8743|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 11:19:50.3246|0|DEBUG|Program|init main 
+2022-04-12 11:19:53.5101|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 11:19:53.5618|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 11:19:53.5618|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 11:19:53.5618|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 11:41:28.4958|0|DEBUG|Program|init main 
+2022-04-12 11:41:31.3718|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 11:41:31.4228|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 11:41:31.4228|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 11:41:31.4228|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 11:41:49.8740|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 11:42:01.4300|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 11:42:08.8634|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 11:42:13.7262|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 11:42:13.7601|0|INFO|ERD.Controllers.EnrollmentsController|This message is from CREATE POST exceeding activity ! 
+2022-04-12 11:57:59.0700|0|DEBUG|Program|init main 
+2022-04-12 11:58:01.8318|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 11:58:01.9000|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 11:58:01.9058|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 11:58:01.9265|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 11:58:16.5219|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 11:58:28.3569|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 11:58:29.1385|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Enrollments] ([ActivityID], [EmployeeID])
+VALUES (@p0, @p1);
+SELECT [ID]
+FROM [Enrollments]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2022-04-12 11:58:29.6625|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'Refreshment_Dashboard.Models.ERDContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Enrollments' with unique index 'IX_Enrollments_EmployeeID_ActivityID'. The duplicate key value is (7, 5).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:18224e21-a2df-4dc3-8a41-df914c6028f9
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Enrollments' with unique index 'IX_Enrollments_EmployeeID_ActivityID'. The duplicate key value is (7, 5).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:18224e21-a2df-4dc3-8a41-df914c6028f9
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-04-12 11:58:29.9246|0|INFO|ERD.Controllers.EnrollmentsController|CREATE POST - Duplicate Activity! 
+2022-04-12 11:59:25.7773|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Create.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\Views\Enrollments\Create.cshtml:line 21
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Create.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\Views\Enrollments\Create.cshtml:line 19
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Create.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\Views\Enrollments\Create.cshtml:line 8
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-04-12 12:12:42.0946|0|DEBUG|Program|init main 
+2022-04-12 12:12:44.9508|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 12:12:45.0375|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 12:12:45.0963|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 12:12:45.1460|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 12:13:05.8724|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:13:22.5006|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:13:22.8606|0|INFO|ERD.Controllers.EnrollmentsController|CREATE POST - Exceeding Activity! 
+2022-04-12 12:13:30.4055|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:13:30.9112|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Enrollments] ([ActivityID], [EmployeeID])
+VALUES (@p0, @p1);
+SELECT [ID]
+FROM [Enrollments]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity(); 
+2022-04-12 12:13:31.0260|10000|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'Refreshment_Dashboard.Models.ERDContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Enrollments' with unique index 'IX_Enrollments_EmployeeID_ActivityID'. The duplicate key value is (7, 5).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:548c319b-9670-4ee3-a10d-1e094ec0afcb
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.Enrollments' with unique index 'IX_Enrollments_EmployeeID_ActivityID'. The duplicate key value is (7, 5).
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:548c319b-9670-4ee3-a10d-1e094ec0afcb
+Error Number:2601,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__104_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2022-04-12 12:13:31.2755|0|INFO|ERD.Controllers.EnrollmentsController|CREATE POST - Duplicate Activity! 
+2022-04-12 12:13:38.4153|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:15:49.3532|0|DEBUG|Program|init main 
+2022-04-12 12:15:51.9762|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 12:15:52.0368|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 12:15:52.0368|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 12:15:52.0464|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 12:16:04.4345|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:18.6792|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:19.1722|0|INFO|ERD.Controllers.EnrollmentsController|CREATE POST - Exceeding Activity! 
+2022-04-12 12:16:21.5959|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:25.7292|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:31.8266|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:32.2180|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:33.5255|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:40.8214|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 12:16:40.8358|0|INFO|ERD.Controllers.EnrollmentsController|CREATE POST - Exceeding Activity! 
+2022-04-12 15:43:36.4652|0|DEBUG|Program|init main 
+2022-04-12 15:43:39.9398|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-12 15:43:39.9807|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-12 15:43:39.9843|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-12 15:43:39.9843|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ 
+2022-04-12 15:43:50.4077|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-04-12 15:43:55.2241|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-04-12 15:44:19.4662|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 15:44:27.2314|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 15:44:33.0094|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-04-12 15:44:39.1898|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 

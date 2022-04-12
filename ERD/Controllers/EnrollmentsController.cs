@@ -20,6 +20,7 @@ namespace ERD.Controllers
         {
             _context = context;
             _logger = logger;
+            _logger.LogDebug(1, "NLog injected Enrollments Controller");
         }
 
 
@@ -101,144 +102,151 @@ namespace ERD.Controllers
             //return View("Error");
 
 
-            try
-            {
-
-                if (ModelState.IsValid)
-                {
-                    var count = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID).Count();
-
-
-                    if (count < 4)
-                    {
-                        var count2 = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID && x.ActivityID == enrollment.ActivityID).Count();
-                        if (count2 == 0)
-                        {
-                            _context.Enrollments.Add(enrollment);
-                            _context.SaveChanges();
-                            return RedirectToAction(nameof(Index));
-                        }
-                        else
-                        {
-
-
-                            ViewBag.ExistingActivityError = "Employee already enrolled in this activity!";
-                            //TempData["ExistingActivity"] = TempData["EmployeeList"];
-                            //return View(enrollment);
-
-                        }
-                    }
-                    else
-                    {
-
-                        ViewBag.ExceedingActivityError = "You cannot select more than 4 Activity";
-                        //ViewBag.ExceedingActivity = TempData["ErrorMessage2"];
-
-                    }
-                    var TypeDropDown = _context.Employees.ToList();
-                    var TypeDropDown2 = _context.Activitys.ToList();
-
-                    ViewBag.TypeDropDown = TypeDropDown;
-                    ViewBag.TypeDropDown2 = TypeDropDown2;
-
-                }
-  
-            }
-            catch (Exception ex)
-            {
-                Message = $"About page visited at {DateTime.UtcNow.ToLongTimeString()}";
-                _logger.LogInformation(Message);
-                //_logger.LogInformation(ex.ToString());
-            }
-            return View(enrollment);
-        }
-
-        // GET: Enrollments/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var enrollment = await _context.Enrollments.FindAsync(id);
-            if (enrollment == null)
-            {
-                return NotFound();
-            }
-            return View(enrollment);
-        }
-
-        // POST: Enrollments/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Enrollment enrollment)
-        {
-            if (id != enrollment.ID)
-            {
-                return NotFound();
-            }
+            //try
+            //{
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(enrollment);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!EnrollmentExists(enrollment.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                var count = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID).Count();
 
-                
-                return RedirectToAction(nameof(Index));
+
+                if (count < 4)
+                {
+                    //var count2 = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID && x.ActivityID == enrollment.ActivityID).Count();
+                    //if (count2 == 0)
+                    //{
+                    try
+                    {
+
+                        _context.Enrollments.Add(enrollment);
+                        _context.SaveChanges();
+                        return RedirectToAction(nameof(Index));
+                    }
+                    catch (DbUpdateException)
+                    {
+                        ViewBag.ExistingActivityError = "Employee already enrolled in this activity!";
+                        _logger.LogInformation("CREATE POST - Duplicate Activity!");
+                        //Message = $"About page visited at {DateTime.UtcNow.ToLongTimeString()}";
+                        //_logger.LogInformation(ex.ToString());
+                    }
+                }
+                else
+                {
+                    ViewBag.ExceedingActivityError = "You cannot select more than 4 Activity";
+                    _logger.LogInformation("CREATE POST - Exceeding Activity!");
+                    //ViewBag.ExceedingActivity = TempData["ErrorMessage2"];
+
+                }
+                //else
+                //{
+
+
+                //    ViewBag.ExistingActivityError = "Employee already enrolled in this activity!";
+                //    //TempData["ExistingActivity"] = TempData["EmployeeList"];
+                //    //return View(enrollment);
+
+                //}
             }
-            //TempData["SucessMessage"] = "Enrollment" + enrollment.ID + "Saved Successfully";
+
+            var TypeDropDown = _context.Employees.ToList();
+            var TypeDropDown2 = _context.Activitys.ToList();
+
+            ViewBag.TypeDropDown = TypeDropDown;
+            ViewBag.TypeDropDown2 = TypeDropDown2;
+            
             return View(enrollment);
+
         }
 
-        // GET: Enrollments/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+
+
+
+        // GET: Enrollments/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+{
+    if (id == null)
+    {
+        return NotFound();
+    }
+
+    var enrollment = await _context.Enrollments.FindAsync(id);
+    if (enrollment == null)
+    {
+        return NotFound();
+    }
+    return View(enrollment);
+}
+
+// POST: Enrollments/Edit/5
+// To protect from overposting attacks, enable the specific properties you want to bind to.
+// For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Edit(int id, Enrollment enrollment)
+{
+    if (id != enrollment.ID)
+    {
+        return NotFound();
+    }
+
+    if (ModelState.IsValid)
+    {
+        try
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var enrollment = await _context.Enrollments
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (enrollment == null)
-            {
-                return NotFound();
-            }
-
-            return View(enrollment);
-        }
-
-        // POST: Enrollments/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var enrollment = await _context.Enrollments.FindAsync(id);
-            _context.Enrollments.Remove(enrollment);
+            _context.Update(enrollment);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!EnrollmentExists(enrollment.ID))
+            {
+                return NotFound();
+            }
+            else
+            {
+                throw;
+            }
         }
 
-        private bool EnrollmentExists(int id)
-        {
-            return _context.Enrollments.Any(e => e.ID == id);
-        }
+
+        return RedirectToAction(nameof(Index));
+    }
+    //TempData["SucessMessage"] = "Enrollment" + enrollment.ID + "Saved Successfully";
+    return View(enrollment);
+}
+
+// GET: Enrollments/Delete/5
+public async Task<IActionResult> Delete(int? id)
+{
+    if (id == null)
+    {
+        return NotFound();
+    }
+
+    var enrollment = await _context.Enrollments
+        .FirstOrDefaultAsync(m => m.ID == id);
+    if (enrollment == null)
+    {
+        return NotFound();
+    }
+
+    return View(enrollment);
+}
+
+// POST: Enrollments/Delete/5
+[HttpPost, ActionName("Delete")]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> DeleteConfirmed(int id)
+{
+    var enrollment = await _context.Enrollments.FindAsync(id);
+    _context.Enrollments.Remove(enrollment);
+    await _context.SaveChangesAsync();
+    return RedirectToAction(nameof(Index));
+}
+
+private bool EnrollmentExists(int id)
+{
+    return _context.Enrollments.Any(e => e.ID == id);
+}
     }
 }

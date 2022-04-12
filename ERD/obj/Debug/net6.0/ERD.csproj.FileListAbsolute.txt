@@ -536,3 +536,7 @@ C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\Serilog.Sinks.As
 C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\Serilog.Sinks.File.dll
 C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll
 C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\obj\Debug\net6.0\ERD.csproj.AssemblyReference.cache
+C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\nlog.config
+C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\NLog.dll
+C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\bin\Debug\net6.0\NLog.Web.AspNetCore.dll

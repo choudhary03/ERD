@@ -4,18 +4,29 @@ using Refreshment_Dashboard.Models;
 using Microsoft.OpenApi.Models;
 using ERD.Services;
 using Microsoft.Extensions.Logging;
+using NLog;
+using NLog.Web;
 
+var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
+logger.Debug("init main");
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ERDContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("ERDConnection")));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// NLog: Setup NLog for Dependency injection
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+builder.Host.UseNLog();
+
+
 builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<ActivitiesService>();
 builder.Services.AddScoped<EnrollmentService>();
 builder.Services.AddSwaggerGen();
 var app = builder.Build();
+
 
 
     //var path = Directory.GetCurrentDirectory();

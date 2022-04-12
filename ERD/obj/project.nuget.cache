@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tPczBjEzpwI/M8fdrqJznbPa68Rp6T+30/BEDk72617RMUy+61z/EmX0lKN3uJ7sV1fkoN7Hmq03zgbEtnPMVg==",
+  "dgSpecHash": "zkinTaqwQyqDD62zXOP94gMOZQ7yLltlbzRU4Vs59q2z53zpG/0XQQjDmE/pRYDFHEVMEgxqBeD8f8/WzWQC2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Radhe\\Documents\\GitHub\\Indpro\\ERD\\ERD\\ERD.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,9 @@
     "C:\\Users\\Radhe\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Radhe\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\Radhe\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Radhe\\.nuget\\packages\\nlog\\4.7.15\\nlog.4.7.15.nupkg.sha512",
+    "C:\\Users\\Radhe\\.nuget\\packages\\nlog.extensions.logging\\1.7.4\\nlog.extensions.logging.1.7.4.nupkg.sha512",
+    "C:\\Users\\Radhe\\.nuget\\packages\\nlog.web.aspnetcore\\4.14.0\\nlog.web.aspnetcore.4.14.0.nupkg.sha512",
     "C:\\Users\\Radhe\\.nuget\\packages\\nuget.common\\5.11.0\\nuget.common.5.11.0.nupkg.sha512",
     "C:\\Users\\Radhe\\.nuget\\packages\\nuget.configuration\\5.11.0\\nuget.configuration.5.11.0.nupkg.sha512",
     "C:\\Users\\Radhe\\.nuget\\packages\\nuget.dependencyresolver.core\\5.11.0\\nuget.dependencyresolver.core.5.11.0.nupkg.sha512",

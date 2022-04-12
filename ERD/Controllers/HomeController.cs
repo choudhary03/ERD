@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
+using Microsoft.Extensions.Logging;
 
 namespace ERD.Controllers
 {
@@ -16,6 +17,7 @@ namespace ERD.Controllers
         {
             _context = context;
             _logger = logger;
+            _logger.LogDebug(1, "NLog injected into HomeController");
             //_logger = logger ?? throw new ArgumentNullException(nameof(logger));
             //_logger.LogTrace("ILogger injected into {0}", nameof(HomeController));
         }
@@ -31,8 +33,8 @@ namespace ERD.Controllers
                    employees = ListOfActivity.Where(y => y.Employee.ID == d.Key).Select(y => y.Employee).FirstOrDefault(), 
                    activityList = d.Select(e => e.Activity).ToList()
                  });
-            
 
+            _logger.LogInformation("Hello, this is the index!");
             return View(GroupedListOfActivity);
 
         //var ListOfActivity = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity)
