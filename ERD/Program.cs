@@ -6,11 +6,17 @@ using ERD.Services;
 using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Web;
+using Microsoft.AspNetCore.Identity;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
 
 var builder = WebApplication.CreateBuilder(args);
+//var connectionString = builder.Configuration.GetConnectionString("ERDContextConnection");;
+
+//builder.Services.AddDbContext<ERDContext>(options => options.UseSqlServer(connectionString));;
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true) .AddEntityFrameworkStores<ERDContext>();;
 
 builder.Services.AddDbContext<ERDContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("ERDConnection")));
 // Add services to the container.
@@ -52,6 +58,7 @@ else
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 
