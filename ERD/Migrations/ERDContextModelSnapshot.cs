@@ -167,12 +167,10 @@ namespace ERD.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -209,12 +207,10 @@ namespace ERD.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -242,6 +238,37 @@ namespace ERD.Migrations
                         .IsUnique();
 
                     b.ToTable("Activitys");
+                });
+
+            modelBuilder.Entity("Refreshment_Dashboard.Models.Booking", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int?>("ActivityID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("BookedOn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("EmployeeID")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("VenueID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ActivityID");
+
+                    b.HasIndex("EmployeeID");
+
+                    b.HasIndex("VenueID");
+
+                    b.ToTable("Bookings");
                 });
 
             modelBuilder.Entity("Refreshment_Dashboard.Models.Employee", b =>
@@ -299,6 +326,31 @@ namespace ERD.Migrations
                     b.ToTable("Enrollments");
                 });
 
+            modelBuilder.Entity("Refreshment_Dashboard.Models.Venue", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int?>("ActivityID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaxLimit")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ActivityID");
+
+                    b.ToTable("Venues");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -350,6 +402,27 @@ namespace ERD.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Refreshment_Dashboard.Models.Booking", b =>
+                {
+                    b.HasOne("Refreshment_Dashboard.Models.Activity", "Activity")
+                        .WithMany()
+                        .HasForeignKey("ActivityID");
+
+                    b.HasOne("Refreshment_Dashboard.Models.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeID");
+
+                    b.HasOne("Refreshment_Dashboard.Models.Venue", "Venues")
+                        .WithMany()
+                        .HasForeignKey("VenueID");
+
+                    b.Navigation("Activity");
+
+                    b.Navigation("Employee");
+
+                    b.Navigation("Venues");
+                });
+
             modelBuilder.Entity("Refreshment_Dashboard.Models.Enrollment", b =>
                 {
                     b.HasOne("Refreshment_Dashboard.Models.Activity", "Activity")
@@ -367,6 +440,15 @@ namespace ERD.Migrations
                     b.Navigation("Activity");
 
                     b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("Refreshment_Dashboard.Models.Venue", b =>
+                {
+                    b.HasOne("Refreshment_Dashboard.Models.Activity", "Activity")
+                        .WithMany()
+                        .HasForeignKey("ActivityID");
+
+                    b.Navigation("Activity");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,0 +1,30 @@
+2022-05-01 22:25:08.5441|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-01 22:25:19.0606|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-01 22:25:19.2485|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:25:19.2485|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:25:19.2485|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:25:38.1575|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/Identity/Account/Register|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-01 22:28:12.1060|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-01 22:28:14.8116|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-01 22:28:14.8464|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:28:14.8464|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:28:14.8464|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:28:28.5021|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/Identity/Account/Register|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-01 22:29:27.3720|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. |url: http://localhost/Identity/Account/Login|action: |ERD.Areas.Identity.Pages.Account.LoginModel+<OnPostAsync>d__21.MoveNext
+2022-05-01 22:29:44.8129|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-01 22:29:49.1955|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-01 22:30:03.6957|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: http://localhost/Identity/Account/Logout|action: |ERD.Areas.Identity.Pages.Account.LogoutModel.OnPost
+2022-05-01 22:30:04.6275|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: http://localhost/Identity/Account/Logout|action: |ERD.Areas.Identity.Pages.Account.LogoutModel.OnPost
+2022-05-01 22:30:07.3947|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-01 22:32:16.2328|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-01 22:32:23.7374|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-01 22:32:23.7862|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:32:23.7862|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:32:23.7862|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:32:39.2823|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/Identity/Account/Login|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-01 22:35:21.5901|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-01 22:35:27.3744|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-01 22:35:27.4835|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:35:27.5358|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:35:27.5358|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-01 22:35:52.7551|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/Identity/Account/Register|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort

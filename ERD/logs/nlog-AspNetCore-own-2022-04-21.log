@@ -1,0 +1,44 @@
+2022-04-21 11:03:10.4070|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 11:03:23.8976|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 11:03:23.9499|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:03:23.9499|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:03:23.9499|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:04:12.1475|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/Index|action: Index|ERD.Controllers.HomeController..ctor
+2022-04-21 11:04:20.8885|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/Home/Index|action: Index|ERD.Controllers.HomeController.Index
+2022-04-21 11:10:38.1830|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 11:10:50.6012|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 11:10:50.6387|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:10:50.6387|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:10:50.6387|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:13:14.9034|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 11:13:18.8412|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 11:13:19.0796|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:13:19.0796|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:13:19.0914|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:13:25.3393|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected in Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-04-21 11:27:17.6867|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 11:27:20.5011|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 11:27:20.5560|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:27:20.5593|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:27:20.5593|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:30:27.2694|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 11:30:29.8564|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 11:30:29.9076|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:30:29.9076|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:30:29.9076|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:31:40.6408|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected in Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-04-21 11:35:25.1276|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 11:35:27.5385|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 11:35:27.5810|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:35:27.5910|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 11:35:27.6161|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 12:09:58.4409|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 12:10:02.0036|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 12:10:02.0584|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 12:10:02.0584|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 12:10:02.0893|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 16:04:01.0054|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-04-21 16:04:06.9417|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-04-21 16:04:07.0773|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 16:04:07.0919|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-04-21 16:04:07.0919|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Indpro\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted

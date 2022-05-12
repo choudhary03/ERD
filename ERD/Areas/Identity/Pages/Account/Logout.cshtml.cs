@@ -30,6 +30,7 @@ namespace ERD.Areas.Identity.Pages.Account
             if (returnUrl != null)
             {
                 return LocalRedirect(returnUrl);
+                //return RedirectToPage(".Identity/Account/Login");
             }
             else
             {

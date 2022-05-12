@@ -27,5 +27,8 @@ namespace Refreshment_Dashboard.Models
         public DbSet<Activity> Activitys { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
+        public DbSet<Venue> Venues { get; set; }
+
     }
 }

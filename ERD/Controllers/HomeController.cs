@@ -18,8 +18,7 @@ namespace ERD.Controllers
             _context = context;
             _logger = logger;
             _logger.LogDebug(1, "NLog injected into HomeController");
-            //_logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            //_logger.LogTrace("ILogger injected into {0}", nameof(HomeController));
+ 
         }
 
 

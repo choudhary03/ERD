@@ -1,0 +1,12 @@
+2022-04-28 12:21:05.3667|0|DEBUG|Program|init main 
+2022-04-28 12:21:38.0520|0|DEBUG|Program|init main 
+2022-04-28 12:25:20.8396|0|DEBUG|Program|init main 
+2022-04-28 12:25:29.9011|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-04-28 12:25:29.9750|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-04-28 12:25:29.9750|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-04-28 12:25:29.9826|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-04-28 12:25:51.3427|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-04-28 12:25:56.7541|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-04-28 12:28:45.4516|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-04-28 12:28:45.4909|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-04-28 12:28:55.2048|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
