@@ -6,127 +6,125 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
+using ERD.Models;
+using Microsoft.Extensions.Logging;
+using ERD.Services;
+using ERD.Service;
 
 namespace ERD.Controllers
 {
     public class BookingsController : Controller
     {
-        private readonly ERDContext _context;
+        private readonly ILogger<BookingsController> _logger;
+        private readonly BookingService _bookingService;
+        private readonly ActivitiesService _activitiesService;
+        private readonly VenueService _venueService;
 
-        public BookingsController(ERDContext context)
+
+        public BookingsController(ILogger<BookingsController> logger, ActivitiesService activityService, VenueService venueService, BookingService bookingService)
         {
-            _context = context;
+            _activitiesService = activityService;
+            _venueService = venueService;
+            _bookingService = bookingService;
+            _logger = logger;
+            _logger.LogDebug(1, "NLog injected into Bookings Controller");
         }
 
-       
+
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Bookings.ToListAsync());
+            return View(_bookingService.ListOfBookings().ToList());
         }
 
        
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
+            var obj = _bookingService.GetBookingDetails(id);
+
+            if (obj == null)
             {
                 return NotFound();
             }
 
-            var booking = await _context.Bookings
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (booking == null)
-            {
-                return NotFound();
-            }
-
-            return View(booking);
+            return View(obj);
         }
 
         
         public IActionResult Create()
         {
+            var venueDropDown = _venueService.ListOfVenues().ToList();
+            var activityDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.venueDropDown = venueDropDown;
+            ViewBag.activityDropDown = activityDropDown;
             return View();
         }
 
        
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,BookedOn")] Booking booking)
+        public ActionResult Create(Booking booking)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(booking);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+            var result = _bookingService.MakeBooking(booking);
+            if (result == "Successfully Booked")
+                return RedirectToAction("Index");
+            else if (result == "Existing Booking")
+                ViewBag.Error = result;
+
+            var venueDropDown = _venueService.ListOfVenues().ToList();
+            var activityDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.venueDropDown = venueDropDown;
+            ViewBag.activityDropDown = activityDropDown;
             return View(booking);
         }
 
-        
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult OverLimit()
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            return View();
+        }
 
-            var booking = await _context.Bookings.FindAsync(id);
-            if (booking == null)
-            {
-                return NotFound();
-            }
-            return View(booking);
+        public IActionResult Duplicate()
+        {
+            return View();
+        }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var obj = _bookingService.GetBookingDetails(id);
+
+            var venueDropDown = _venueService.ListOfVenues().ToList();
+            var activityDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.venueDropDown = venueDropDown;
+            ViewBag.activityDropDown = activityDropDown;
+            return View(obj);
         }
 
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,BookedOn")] Booking booking)
+        public async Task<IActionResult> Edit(int id, Booking booking)
         {
-            if (id != booking.ID)
-            {
-                return NotFound();
-            }
+            var venueDropDown = _venueService.ListOfVenues().ToList();
+            var activityDropDown = _activitiesService.ListOfActivities().ToList();
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(booking);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!BookingExists(booking.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
+            ViewBag.venueDropDown = venueDropDown;
+            ViewBag.activityDropDown = activityDropDown;
+
+            var result = _bookingService.UpdateAnBooking(id, booking);
+            if (result == "Successfully Updated")
+                return RedirectToAction("Index");
+            else if (result == "Existing Booking")
+                ViewBag.Error = result;
             return View(booking);
         }
 
         
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var booking = await _context.Bookings
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (booking == null)
-            {
-                return NotFound();
-            }
-
-            return View(booking);
+            var obj = _bookingService.GetBookingDetails(id);
+            return View(obj);
         }
 
        
@@ -134,15 +132,9 @@ namespace ERD.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var booking = await _context.Bookings.FindAsync(id);
-            _context.Bookings.Remove(booking);
-            await _context.SaveChangesAsync();
+            var result = _bookingService.DeleteAnBooking(_bookingService.GetBookingDetails(id));
             return RedirectToAction(nameof(Index));
         }
 
-        private bool BookingExists(int id)
-        {
-            return _context.Bookings.Any(e => e.ID == id);
-        }
     }
 }

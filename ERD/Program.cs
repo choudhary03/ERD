@@ -9,6 +9,7 @@ using NLog.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using ERD;
+using ERD.Service;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
@@ -43,6 +44,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<EmployeeService>();
 builder.Services.AddScoped<ActivitiesService>();
 builder.Services.AddScoped<EnrollmentService>();
+builder.Services.AddScoped<TeamsService>();
+builder.Services.AddScoped<VenueService>();
+builder.Services.AddScoped<BookingService>();
 
 var app = builder.Build();
 

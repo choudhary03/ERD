@@ -3,27 +3,61 @@
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var venueListItem = ViewBag.venueDropDown;
+    var activityListItem = ViewBag.activityDropDown;
 }
 
 <h1>Create</h1>
 
 <h4>Booking</h4>
 <hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="BookedOn" class="control-label"></label>
-                <input asp-for="BookedOn" class="form-control" />
-                <span asp-validation-for="BookedOn" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<form method="post">
+    <br />
+
+    <select asp-for="VenueID">
+        <option selected>--Venue--</option>
+        @foreach (var item in venueListItem)
+        {
+            <option value="@item.ID">@item.VenueName</option>
+        }
+    </select>
+    <br />
+    <br />
+    <select asp-for="ActivityID">
+        <option selected>--Activity--</option>
+        @foreach (var item in activityListItem)
+        {
+            <option value="@item.ActivityID">@item.ActivityName</option>
+        }
+    </select>
+    <br />
+    <br />
+    <div class="form-group">
+        <label asp-for="BookedOn" class="control-label"></label>
+        <input asp-for="BookedOn" class="form-control" />
+        <span asp-validation-for="BookedOn" class="text-danger"></span>
     </div>
-</div>
+    <br />
+    <div class="form-group">
+        <label asp-for="MatchFix" class="control-label"></label>
+        <input asp-for="MatchFix" class="form-control" />
+        <span asp-validation-for="MatchFix" class="text-danger"></span>
+    </div>
+    <br />
+    <br />
+
+    <button type="submit" id="button" class="btn btn-primary">
+        Create
+    </button>
+
+    <p style="color:red;">
+        @Html.Label("",Convert.ToString((string)ViewBag.Error))
+    </p>
+
+    <p style="color:red;">
+        @Html.Label("",Convert.ToString((string)ViewBag.OverlimitError))
+    </p>
+</form>
 
 <div>
     <a asp-action="Index">Back to List</a>

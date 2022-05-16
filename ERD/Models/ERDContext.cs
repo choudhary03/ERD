@@ -29,6 +29,7 @@ namespace Refreshment_Dashboard.Models
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Venue> Venues { get; set; }
+        public DbSet<Team> Teams { get; set; }
 
     }
 }

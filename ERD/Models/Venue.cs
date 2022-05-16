@@ -13,7 +13,7 @@ namespace Refreshment_Dashboard.Models
 
         [Required(ErrorMessage = "Required*")]
         public string Name { get; set; }
-
+        public int ActivityID { get; set; }
         [ForeignKey("ActivityID")]
         public virtual Activity Activity { get; set; }
 

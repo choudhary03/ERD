@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERD.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 
 namespace ERD.Services
@@ -29,7 +30,7 @@ namespace ERD.Services
                 return true;
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -40,35 +41,10 @@ namespace ERD.Services
             try
             {
 
-                var emp = _context.Activitys.Where(x => x.ID == activities.ID).FirstOrDefault();
-                if (emp != null)
+                var activity = _context.Activitys.Where(x => x.ID == activities.ID).FirstOrDefault();
+                if (activity != null)
                 {
-                    _context.Activitys.Remove(emp);
-                    _context.SaveChanges();
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-
-        public bool UpdateAnActivity(Activity activities)
-        {
-            try
-            {
-                var emp = _context.Activitys.Where(x => x.ID == activities.ID).FirstOrDefault();
-                if (emp != null)
-                {
-                    Activity ServicesActivity = new Activity();
-                    ServicesActivity.Name = activities.Name;
-
+                    _context.Activitys.Remove(activity);
                     _context.SaveChanges();
                     return true;
                 }
@@ -84,14 +60,39 @@ namespace ERD.Services
             }
         }
 
+        public bool UpdateAnActivity(Activity activities)
+        {
+            try
+            {
+                var activity = _context.Activitys.Where(x => x.ID == activities.ID).FirstOrDefault();
+                if (activity != null)
+                {
+
+                    activity.Name = activities.Name;
+
+                    _context.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (DbUpdateException)
+            {
+                return false;
+            }
+        }
+
         public Activity GetActivityDetails(int id)
         {
             try
             {
-                var emp = _context.Activitys.Where(x => x.ID == id).FirstOrDefault();
-                if (emp != null)
+                var activity = _context.Activitys.Where(x => x.ID == id).FirstOrDefault();
+                if (activity != null)
                 {
-                    return emp;
+                    return activity;
                 }
                 else
                 {
@@ -108,10 +109,10 @@ namespace ERD.Services
         {
             try
             {
-                List<Activity> emp = _context.Activitys.ToList();
-                if (emp != null)
+                List<Activity> activity = _context.Activitys.ToList();
+                if (activity != null)
                 {
-                    return emp;
+                    return activity;
                 }
                 else
                 {

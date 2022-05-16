@@ -1,0 +1,46 @@
+2022-05-16 18:13:50.1553|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-16 18:14:19.5293|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-16 18:14:29.1512|20102|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Bookings] (
+    [ID] int NOT NULL IDENTITY,
+    [VenueID] int NOT NULL,
+    [ActivityID] int NOT NULL,
+    [MatchFix] nvarchar(max) NULL,
+    [BookedOn] datetime2 NOT NULL,
+    CONSTRAINT [PK_Bookings] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Bookings_Activitys_ActivityID] FOREIGN KEY ([ActivityID]) REFERENCES [Activitys] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Bookings_Venues_VenueID] FOREIGN KEY ([VenueID]) REFERENCES [Venues] ([ID]) ON DELETE CASCADE
+); |url: |action: |Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`6.Log
+2022-05-16 23:08:16.3530|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-16 23:22:31.2788|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-16 23:24:56.6829|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-16 23:25:04.7359|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-16 23:25:04.8632|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-16 23:25:04.8672|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-16 23:25:04.8672|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-16 23:25:08.3529|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-16 23:25:11.3203|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-16 23:25:17.5254|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-16 23:25:26.8920|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-16 23:25:56.5669|0|INFO|ERD.Areas.Identity.Pages.Account.RegisterModel|User created a new account with password. |url: http://localhost/Identity/Account/Register|action: |ERD.Areas.Identity.Pages.Account.RegisterModel+<OnPostAsync>d__21.MoveNext
+2022-05-16 23:25:56.8570|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-16 23:25:56.8805|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-16 23:26:01.4158|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: http://localhost/Identity/Account/Logout|action: |ERD.Areas.Identity.Pages.Account.LogoutModel.OnPost
+2022-05-16 23:26:01.4391|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-16 23:26:01.4532|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-16 23:27:07.8479|0|INFO|ERD.Areas.Identity.Pages.Account.RegisterModel|User created a new account with password. |url: http://localhost/Identity/Account/Register|action: |ERD.Areas.Identity.Pages.Account.RegisterModel+<OnPostAsync>d__21.MoveNext
+2022-05-16 23:27:07.8794|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-16 23:27:07.8924|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-16 23:27:15.5130|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: http://localhost/Identity/Account/Logout|action: |ERD.Areas.Identity.Pages.Account.LogoutModel.OnPost
+2022-05-16 23:27:15.5647|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-16 23:27:15.5783|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-16 23:27:29.8011|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. |url: http://localhost/Identity/Account/Login|action: |ERD.Areas.Identity.Pages.Account.LoginModel+<OnPostAsync>d__21.MoveNext
+2022-05-16 23:27:29.8233|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-16 23:27:29.8360|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-16 23:27:36.4865|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-16 23:27:37.7774|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-16 23:32:47.2965|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-16 23:32:48.5288|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-16 23:33:01.6673|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-16 23:33:10.7668|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-16 23:33:16.5776|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor

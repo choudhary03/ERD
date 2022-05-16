@@ -13,21 +13,25 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.BookedOn)
-            </th>
-            <th></th>
+                <th>Booking ID</th>
+                <th>Venue</th>
+                <th>Activity</th>
+                <th>BookedOn</th>
+                <th>MatchFix</th>
+                <th>Action</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>@item.ID</td>
+            <td>@item.Venue.Name</td>
+            <td>@item.Activity.Name</td>
+            <td>@item.BookedOn</td>
+            <td>@item.MatchFix</td>
             <td>
-                @Html.DisplayFor(modelItem => item.BookedOn)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-controller="Bookings" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-controller="Bookings" asp-action="Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>

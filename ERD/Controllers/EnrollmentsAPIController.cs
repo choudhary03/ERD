@@ -6,32 +6,33 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
+using ERD.Services;
 
-namespace ERD.Controllers
+namespace ERD.Controllers.API
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class EnrollmentsAPIController : ControllerBase
+    public class EnrollmentsController : ControllerBase
     {
-        private readonly ERDContext _context;
+        private readonly EnrollmentService enrollmentService;
 
-        public EnrollmentsAPIController(ERDContext context)
+        public EnrollmentsController(EnrollmentService enrollment)
         {
-            _context = context;
+            enrollmentService = enrollment;
         }
 
         // GET: api/EnrollmentsAPI
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Enrollment>>> GetEnrollments()
+        public ActionResult<IList<Enrollment>> GetEnrollment()
         {
-            return await _context.Enrollments.ToListAsync();
+            return enrollmentService.ListOfEnrollment().ToList();
         }
 
         // GET: api/EnrollmentsAPI/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Enrollment>> GetEnrollment(int id)
+        public ActionResult<Enrollment> GetEnrollment(int id)
         {
-            var enrollment = await _context.Enrollments.FindAsync(id);
+            var enrollment = enrollmentService.GetEnrollmentDetails(id);
 
             if (enrollment == null)
             {
@@ -42,66 +43,50 @@ namespace ERD.Controllers
         }
 
         // PUT: api/EnrollmentsAPI/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEnrollment(int id, Enrollment enrollment)
+        public ActionResult PutEnrollment(int id, Enrollment enrollment)
         {
             if (id != enrollment.ID)
             {
                 return BadRequest();
             }
-
-            _context.Entry(enrollment).State = EntityState.Modified;
-
-            try
+            else
             {
-                await _context.SaveChangesAsync();
+                enrollmentService.UpdateAnEnrollment(id, enrollment);
+                return Ok();
             }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!EnrollmentExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
         }
 
         // POST: api/EnrollmentsAPI
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Enrollment>> PostEnrollment(Enrollment enrollment)
+        public ActionResult<Enrollment> PostEnrollment(Enrollment enrollment)
         {
-            _context.Enrollments.Add(enrollment);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetEnrollment", new { id = enrollment.ID }, enrollment);
+            var enroll = enrollmentService.AddAnEnrollment(enrollment);
+            return Ok(enrollment);
         }
+
 
         // DELETE: api/EnrollmentsAPI/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEnrollment(int id)
+        public ActionResult DeleteEnrollment(int id)
         {
-            var enrollment = await _context.Enrollments.FindAsync(id);
+            var enrollment = enrollmentService.GetEnrollmentDetails(id)
+;
             if (enrollment == null)
             {
                 return NotFound();
             }
-
-            _context.Enrollments.Remove(enrollment);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            else
+            {
+                enrollmentService.DeleteAnEnrollment(enrollment);
+                return Ok();
+            }
         }
 
-        private bool EnrollmentExists(int id)
-        {
-            return _context.Enrollments.Any(e => e.ID == id);
-        }
+
+        //private bool EnrollmentExists(int id)
+        //{
+        //    return _context.Enrollments.Any(e => e.ID == id);
+        //}
     }
 }

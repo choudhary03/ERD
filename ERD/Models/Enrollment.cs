@@ -27,19 +27,22 @@ namespace Refreshment_Dashboard.Models
         public int EmployeeID { get; set; }
         public int ActivityID { get; set; }
 
-        [NotMapped]
-        public string EmployeeName { get; set; }
+        //[NotMapped]
+        //public string EmployeeName { get; set; }
 
-        [NotMapped]
-        public string ActName { get; set; }
+        //[NotMapped]
+        //public string ActName { get; set; }
 
         [ForeignKey("EmployeeID")]
         public virtual Employee Employee { get; set; }
 
-
         [ForeignKey("ActivityID")]
         public virtual Activity Activity { get; set; }
 
-        
+        public int? TeamID { get; set; }
+        [ForeignKey("TeamID")]
+        public virtual Team Team { get; set; }
+
+
     }
 }

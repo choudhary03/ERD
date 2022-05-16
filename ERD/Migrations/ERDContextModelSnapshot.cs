@@ -248,23 +248,21 @@ namespace ERD.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
-                    b.Property<int?>("ActivityID")
+                    b.Property<int>("ActivityID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("BookedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("EmployeeID")
-                        .HasColumnType("int");
+                    b.Property<string>("MatchFix")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VenueID")
+                    b.Property<int>("VenueID")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
                     b.HasIndex("ActivityID");
-
-                    b.HasIndex("EmployeeID");
 
                     b.HasIndex("VenueID");
 
@@ -316,14 +314,44 @@ namespace ERD.Migrations
                     b.Property<int>("EmployeeID")
                         .HasColumnType("int");
 
+                    b.Property<int?>("TeamID")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
 
                     b.HasIndex("ActivityID");
+
+                    b.HasIndex("TeamID");
 
                     b.HasIndex("EmployeeID", "ActivityID")
                         .IsUnique();
 
                     b.ToTable("Enrollments");
+                });
+
+            modelBuilder.Entity("Refreshment_Dashboard.Models.Team", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int>("ActivityID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MaxLimit")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ActivityID");
+
+                    b.ToTable("Teams");
                 });
 
             modelBuilder.Entity("Refreshment_Dashboard.Models.Venue", b =>
@@ -334,7 +362,7 @@ namespace ERD.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
 
-                    b.Property<int?>("ActivityID")
+                    b.Property<int>("ActivityID")
                         .HasColumnType("int");
 
                     b.Property<int>("MaxLimit")
@@ -406,21 +434,19 @@ namespace ERD.Migrations
                 {
                     b.HasOne("Refreshment_Dashboard.Models.Activity", "Activity")
                         .WithMany()
-                        .HasForeignKey("ActivityID");
+                        .HasForeignKey("ActivityID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Refreshment_Dashboard.Models.Employee", "Employee")
+                    b.HasOne("Refreshment_Dashboard.Models.Venue", "Venue")
                         .WithMany()
-                        .HasForeignKey("EmployeeID");
-
-                    b.HasOne("Refreshment_Dashboard.Models.Venue", "Venues")
-                        .WithMany()
-                        .HasForeignKey("VenueID");
+                        .HasForeignKey("VenueID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Activity");
 
-                    b.Navigation("Employee");
-
-                    b.Navigation("Venues");
+                    b.Navigation("Venue");
                 });
 
             modelBuilder.Entity("Refreshment_Dashboard.Models.Enrollment", b =>
@@ -437,16 +463,35 @@ namespace ERD.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Refreshment_Dashboard.Models.Team", "Team")
+                        .WithMany()
+                        .HasForeignKey("TeamID");
+
                     b.Navigation("Activity");
 
                     b.Navigation("Employee");
+
+                    b.Navigation("Team");
+                });
+
+            modelBuilder.Entity("Refreshment_Dashboard.Models.Team", b =>
+                {
+                    b.HasOne("Refreshment_Dashboard.Models.Activity", "Activity")
+                        .WithMany()
+                        .HasForeignKey("ActivityID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Activity");
                 });
 
             modelBuilder.Entity("Refreshment_Dashboard.Models.Venue", b =>
                 {
                     b.HasOne("Refreshment_Dashboard.Models.Activity", "Activity")
                         .WithMany()
-                        .HasForeignKey("ActivityID");
+                        .HasForeignKey("ActivityID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Activity");
                 });

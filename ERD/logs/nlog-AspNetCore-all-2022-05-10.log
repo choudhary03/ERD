@@ -1,0 +1,16 @@
+2022-05-10 10:41:33.6920|0|DEBUG|Program|init main 
+2022-05-10 10:41:39.2901|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-05-10 10:41:39.6511|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-05-10 10:41:39.6511|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-05-10 10:41:39.6613|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-05-10 10:41:45.7111|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-05-10 10:41:52.2333|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-05-10 10:42:01.4814|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-05-10 10:42:15.8045|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-05-10 10:42:15.9759|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-05-10 10:42:29.2413|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-05-10 10:42:29.3734|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-05-10 10:42:29.4120|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-05-10 10:42:58.2932|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-05-10 10:42:58.4077|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-05-10 10:42:58.4770|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 

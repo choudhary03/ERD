@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERD.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 
 namespace ERD.Services
@@ -18,21 +19,36 @@ namespace ERD.Services
             _context = context;
         }
 
-
-
-        public bool AddAnEnrollment(Enrollment enrollment)
+        public string AddAnEnrollment(Enrollment enrollment)
         {
-            try
-            {
-                _context.Enrollments.Add(enrollment);
-                _context.SaveChanges();
-                return true;
+            var count = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID).Count();
+            var teamMaxCount = _context.Enrollments.Where(x => x.TeamID == enrollment.TeamID).Where(x => x.ActivityID == enrollment.ActivityID).Count();
 
-            }
-            catch (Exception ex)
+            var currentTeam = _context.Teams.Where(x => x.ID == enrollment.TeamID).Where(x => x.ActivityID == enrollment.ActivityID).FirstOrDefault();
+            if (teamMaxCount < currentTeam.MaxLimit)
             {
-                return false;
+                if (count < 4)
+                {
+                    try
+                    {
+                        _context.Enrollments.Add(enrollment);
+                        _context.SaveChanges();
+                        return "Successfully Enrolled";
+
+                    }
+                    catch (DbUpdateException)
+                    {
+                        return "Enrollment already exists";
+                    }
+                }
+                else
+                    return "You can choose upto 4 activities only";
             }
+            else
+            {
+                return "Max enrollment for team reached.";
+            }
+
         }
 
         public bool DeleteAnEnrollment(Enrollment enrollment)
@@ -40,11 +56,11 @@ namespace ERD.Services
             try
             {
 
-                var emp = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
+                var enroll = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
 
-                if (emp != null)
+                if (enroll != null)
                 {
-                    _context.Enrollments.Remove(emp);
+                    _context.Enrollments.Remove(enroll);
                     _context.SaveChanges();
                     return true;
                 }
@@ -54,36 +70,62 @@ namespace ERD.Services
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 return false;
             }
         }
 
-        public bool UpdateAnEnrollment(Enrollment enrollment)
+        public string UpdateAnEnrollment(int ID, Enrollment enrollment)
         {
+            //try
+            //{
+            //    var emp = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
+            //    if (emp != null)
+            //    {
+            //        Enrollment ServicesEnrollment = new Enrollment();
+            //        ServicesEnrollment.ActivityID = enrollment.ActivityID;
+            //        ServicesEnrollment.EmployeeID = enrollment.EmployeeID;
+
+            //        _context.SaveChanges();
+            //        return true;
+            //    }
+            //    else
+            //    {
+            //        return false;
+            //    }
+
+            //}
+            //catch (Exception)
+            //{
+            //    return false;
+            //}
+
             try
             {
-                var emp = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
-                if (emp != null)
+                var teamMaxCount = _context.Enrollments.Where(x => x.TeamID == enrollment.TeamID).Where(x => x.ActivityID == enrollment.ActivityID).Count();
+
+                var currentTeam = _context.Teams.Where(x => x.ID == enrollment.TeamID).Where(x => x.ActivityID == enrollment.ActivityID).FirstOrDefault();
+
+                if (teamMaxCount < currentTeam.MaxLimit)
                 {
-                    Enrollment ServicesEnrollment = new Enrollment();
-                    ServicesEnrollment.ActivityID = enrollment.ActivityID;
-                    ServicesEnrollment.EmployeeID = enrollment.EmployeeID;
+                    var enroll = GetEnrollmentDetails(ID);
+
+                    enroll.EmployeeID = enrollment.EmployeeID;
+                    enroll.ActivityID = enrollment.ActivityID;
+                    enroll.TeamID = enrollment.TeamID;
 
                     _context.SaveChanges();
-                    return true;
+                    return "Successfully Enrolled";
                 }
                 else
-                {
-                    return false;
-                }
-
+                    return "Max enrollment for team reached";
             }
-            catch (Exception)
+            catch (DbUpdateException)
             {
-                return false;
+                return "Enrollment already exists";
             }
+
         }
 
         public Enrollment GetEnrollmentDetails(int id)
@@ -110,10 +152,10 @@ namespace ERD.Services
         {
             try
             {
-                List<Enrollment> emp = _context.Enrollments.ToList();
-                if (emp != null)
+                List<Enrollment> enroll = _context.Enrollments.ToList();
+                if (enroll != null)
                 {
-                    return emp;
+                    return enroll;
                 }
                 else
                 {

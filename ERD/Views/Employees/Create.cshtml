@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
+     var roleListItem = ViewBag.TypeDropDown;
 }
 
 <h1>Create</h1>
@@ -43,7 +44,9 @@
         </form>
     </div>
 </div>
-
+<p style = "color:red;">
+           @Html.Label("",Convert.ToString((string)ViewBag.Error))
+       </p>
 <div>
     <a asp-action="Index">Back to List</a>
 </div>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERD.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 
 namespace ERD.Services
@@ -29,7 +30,7 @@ namespace ERD.Services
                 return true;
 
             }
-            catch (Exception ex)
+            catch (DbUpdateException )
             {
                 return false;
             }
@@ -53,7 +54,7 @@ namespace ERD.Services
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -81,7 +82,7 @@ namespace ERD.Services
                 }
 
             }
-            catch (Exception)
+            catch (DbUpdateException)
             {
                 return false;
             }
@@ -125,8 +126,6 @@ namespace ERD.Services
             {
                 return null;
             }
-
-
         }
     }
 }

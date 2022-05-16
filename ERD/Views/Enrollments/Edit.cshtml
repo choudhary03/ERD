@@ -33,13 +33,16 @@
 
 @{
     ViewData["Title"] = "Edit";
+    var employeeListItem = ViewBag.TypeDropDown1;
+    var activityListItem = ViewBag.TypeDropDown2;
+    var teamListItem = ViewBag.TypeDropDown3;
 }
 
 <h1>Edit</h1>
 
 <h4>EmployeeActivity</h4>
 <hr />
-<div class="row">
+@*<div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -62,7 +65,47 @@
             </div>
         </form>
     </div>
-</div>
+</div>*@
+
+<form method ="post">
+  <br />
+  
+    <select asp-for ="EmployeeID">
+           <option selected>--Employee--</option>
+            @foreach (var item in employeeListItem)
+                    {
+                        <option value="@item.EmployeeID">@item.EmployeeName</option>
+                    }
+       </select>
+    <br />
+    <br />
+        <select asp-for ="ActivityID">
+           <option selected>--Activity--</option>
+            @foreach (var item in activityListItem)
+                    {
+                        <option value="@item.ActivityID">@item.ActivityName</option>
+                    }
+       </select>
+       <br />
+       <br />
+       <select asp-for ="TeamID">
+           <option selected>--Venue--</option>
+            @foreach (var item in teamListItem)
+                    {
+                        <option value="@item.ID">@item.Name</option>
+                    }
+       </select>
+       <br />
+       <br />
+
+   <button type ="submit" class= "btn btn-primary">
+       Edit
+   </button>
+
+    <p style = "color:red;">
+           @Html.Label("",Convert.ToString((string)ViewBag.Error))
+       </p> 
+</form>
 
 <div>
     <a asp-action="Index">Back to List</a>

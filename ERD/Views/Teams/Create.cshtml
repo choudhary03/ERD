@@ -1,0 +1,57 @@
+﻿@model Refreshment_Dashboard.Models.Team
+
+@{
+    ViewData["Title"] = "Create";
+    var activityListItem = ViewBag.TypeDropDown;
+}
+<h1>Create</h1>
+
+<h4>Team</h4>
+<hr />
+
+<form method ="post">
+  <br />
+    
+  <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+  </div>
+   <div class="form-group">
+                <label asp-for="MaxLimit" class="control-label"></label>
+                <input asp-for="MaxLimit" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+  </div>
+       <br />
+       <br />
+       <select asp-for ="ActivityID">
+           <option selected>--Activity--</option>
+            @foreach (var item in activityListItem)
+                    {
+                        <option value="@item.ActivityID">@item.ActivityName</option>
+                    }
+       </select>
+       <br />
+       <br />
+
+       
+  @*     @if (ViewBag.ErrorMessage != null)
+    {
+        <h1>@ViewBag.ErrorMessage</h1>
+    }*@
+    <button type ="submit" id= "button" class= "btn btn-primary">
+       Create
+   </button>
+
+   <p style = "color:red;">
+           @Html.Label("",Convert.ToString((string)ViewBag.DuplicateError))
+       </p> 
+
+       <p style = "color:red;">
+           @Html.Label("",Convert.ToString((string)ViewBag.OverlimitError))
+       </p> 
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

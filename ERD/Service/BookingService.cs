@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERD.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 
 namespace ERD.Service
@@ -18,18 +19,18 @@ namespace ERD.Service
             _context = context;
         }
 
-        public bool MakeBooking(Booking bookings)
+        public string MakeBooking(Booking bookings)
         {
             try
             {
                 _context.Bookings.Add(bookings);
                 _context.SaveChanges();
-                return true;
+                return "Successfully Booked";
 
             }
-            catch (Exception ex)
+            catch (DbUpdateException)
             {
-                return false;
+                return "Existing Booking";
             }
         }
 
@@ -38,10 +39,10 @@ namespace ERD.Service
             try
             {
 
-                var emp = _context.Bookings.Where(x => x.ID == bookings.ID).FirstOrDefault();
-                if (emp != null)
+                var currentBooking = _context.Bookings.Where(x => x.ID == bookings.ID).FirstOrDefault();
+                if (currentBooking != null)
                 {
-                    _context.Bookings.Remove(emp);
+                    _context.Bookings.Remove(currentBooking);
                     _context.SaveChanges();
                     return true;
                 }
@@ -57,28 +58,41 @@ namespace ERD.Service
             }
         }
 
-        public bool UpdateAnBooking(Booking bookings)
+        public string UpdateAnBooking(int id, Booking bookings)
         {
             try
             {
-                var emp = _context.Bookings.Where(x => x.ID == bookings.ID).FirstOrDefault();
-                if (emp != null)
-                {
-                    Booking ServicesBooking = new Booking();
-                    ServicesBooking.ID = bookings.ID;
+                //var emp = _context.Bookings.Where(x => x.ID == bookings.ID).FirstOrDefault();
+                //if (emp != null)
+                //{
+                //    //Booking ServicesBooking = new Booking();
+                //    //ServicesBooking.ID = bookings.ID;
+                //    emp.BookedOn = bookings.BookedOn;
+                //    emp.VenueID = bookings.VenueID;
+                //    emp.ActivityID = bookings.ActivityID;
 
-                    _context.SaveChanges();
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                //    _context.SaveChanges();
+                //    return true;
+                //}
+                //else
+                //{
+                //    return false;
+                //}
+                var currentBooking = GetBookingDetails(id);
+
+                currentBooking.ID = bookings.ID;
+                currentBooking.BookedOn = bookings.BookedOn;
+                currentBooking.ActivityID = bookings.ActivityID;
+                currentBooking.VenueID = bookings.VenueID;
+                currentBooking.MatchFix = bookings.MatchFix;
+
+                _context.SaveChanges();
+                return "Success";
 
             }
-            catch (Exception)
+            catch (DbUpdateException)
             {
-                return false;
+                return "Existing Enrollment";
             }
         }
 
@@ -86,10 +100,10 @@ namespace ERD.Service
         {
             try
             {
-                var emp = _context.Bookings.Where(x => x.ID == id).FirstOrDefault();
-                if (emp != null)
+                var bookingItem = _context.Bookings.Where(x => x.ID == id).FirstOrDefault();
+                if (bookingItem != null)
                 {
-                    return emp;
+                    return bookingItem;
                 }
                 else
                 {
@@ -106,10 +120,10 @@ namespace ERD.Service
         {
             try
             {
-                List<Booking> emp = _context.Bookings.ToList();
-                if (emp != null)
+                List<Booking> bookingList = _context.Bookings.Include(x => x.Activity).Include(x => x.Venue).ToList();
+                if (bookingList != null)
                 {
-                    return emp;
+                    return bookingList;
                 }
                 else
                 {

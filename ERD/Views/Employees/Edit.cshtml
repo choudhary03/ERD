@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var roleListItem = ViewBag.TypeDropDown;
 }
 
 <h1>Edit</h1>
@@ -37,6 +38,9 @@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
+             <p style = "color:red;">
+           @Html.Label("",Convert.ToString((string)ViewBag.Error))
+       </p>
         </form>
     </div>
 </div>

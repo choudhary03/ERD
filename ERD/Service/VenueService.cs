@@ -17,7 +17,7 @@ namespace ERD.Service
             _context = context;
         }
 
-        public bool SelectVenue(Venue venues)
+        public bool AddVenue(Venue venues)
         {
             try
             {
@@ -26,7 +26,7 @@ namespace ERD.Service
                 return true;
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -50,7 +50,7 @@ namespace ERD.Service
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return false;
             }
@@ -63,8 +63,11 @@ namespace ERD.Service
                 var emp = _context.Venues.Where(x => x.ID == venues.ID).FirstOrDefault();
                 if (emp != null)
                 {
-                    Venue ServicesVenue = new Venue();
-                    ServicesVenue.ID = venues.ID;
+                    //Venue ServicesVenue = new Venue();
+                    //ServicesVenue.ID = venues.ID;
+
+                    emp.Name = venues.Name;
+                    emp.ActivityID = venues.ActivityID;
 
                     _context.SaveChanges();
                     return true;

@@ -16,6 +16,7 @@
             <th>Enrollment No.</th>
             <th>Activity Name</th>
             <th>Employee Name</th>
+             <th>Team</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -30,6 +31,9 @@
             </td>
             <td>   
                 @item.Employee.Firstname
+            </td>
+            <td>
+                @item.Team.Name
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
