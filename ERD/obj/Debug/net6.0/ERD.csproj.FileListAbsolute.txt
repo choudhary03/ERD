@@ -826,3 +826,4 @@ C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug
 C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\obj\Debug\net6.0\ERD.csproj.AssemblyReference.cache
+C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll

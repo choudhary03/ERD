@@ -87,12 +87,12 @@ namespace ERD.Service
                 currentBooking.MatchFix = bookings.MatchFix;
 
                 _context.SaveChanges();
-                return "Success";
+                return "Successfully Booked";
 
             }
             catch (DbUpdateException)
             {
-                return "Existing Enrollment";
+                return "Existing Booking";
             }
         }
 

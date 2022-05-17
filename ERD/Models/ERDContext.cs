@@ -22,6 +22,9 @@ namespace Refreshment_Dashboard.Models
             modelBuilder.Entity<Enrollment>().HasIndex(x => new { x.EmployeeID, x.ActivityID }).IsUnique(true);
             modelBuilder.Entity<Employee>().HasIndex(x => new { x.Email }).IsUnique(true);
             modelBuilder.Entity<Activity>().HasIndex(x => new { x.Name }).IsUnique(true);
+            modelBuilder.Entity<Venue>().HasIndex(x => new { x.ActivityID }).IsUnique(true);
+            modelBuilder.Entity<Booking>().HasIndex(x => new { x.BookedOn, x.VenueID, x.ActivityID, x.MatchFix }).IsUnique(true);
+            modelBuilder.Entity<Team>().HasIndex(x => new { x.Name, x.ActivityID }).IsUnique(true);
         }
        
         public DbSet<Activity> Activitys { get; set; }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Refreshment_Dashboard.Models;
 
@@ -11,9 +12,10 @@ using Refreshment_Dashboard.Models;
 namespace ERD.Migrations
 {
     [DbContext(typeof(ERDContext))]
-    partial class ERDContextModelSnapshot : ModelSnapshot
+    [Migration("20220517060009_DebuggedMVC2")]
+    partial class DebuggedMVC2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -255,7 +257,7 @@ namespace ERD.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("MatchFix")
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("VenueID")
                         .HasColumnType("int");
@@ -265,10 +267,6 @@ namespace ERD.Migrations
                     b.HasIndex("ActivityID");
 
                     b.HasIndex("VenueID");
-
-                    b.HasIndex("BookedOn", "VenueID", "ActivityID", "MatchFix")
-                        .IsUnique()
-                        .HasFilter("[MatchFix] IS NOT NULL");
 
                     b.ToTable("Bookings");
                 });
@@ -349,14 +347,11 @@ namespace ERD.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
 
                     b.HasIndex("ActivityID");
-
-                    b.HasIndex("Name", "ActivityID")
-                        .IsUnique();
 
                     b.ToTable("Teams");
                 });
@@ -378,8 +373,7 @@ namespace ERD.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("ActivityID")
-                        .IsUnique();
+                    b.HasIndex("ActivityID");
 
                     b.ToTable("Venues");
                 });

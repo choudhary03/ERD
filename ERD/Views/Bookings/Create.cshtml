@@ -15,19 +15,19 @@
     <br />
 
     <select asp-for="VenueID">
-        <option selected>--Venue--</option>
+        <option selected>--Choose Venue--</option>
         @foreach (var item in venueListItem)
         {
-            <option value="@item.ID">@item.VenueName</option>
+            <option value="@item.ID">@item.Name</option>
         }
     </select>
     <br />
     <br />
     <select asp-for="ActivityID">
-        <option selected>--Activity--</option>
+        <option selected>--Select Activity--</option>
         @foreach (var item in activityListItem)
         {
-            <option value="@item.ActivityID">@item.ActivityName</option>
+            <option value="@item.ID">@item.Name</option>
         }
     </select>
     <br />
@@ -46,9 +46,12 @@
     <br />
     <br />
 
-    <button type="submit" id="button" class="btn btn-primary">
+   @* <button type="submit" id="button" class="btn btn-primary">
         Create
-    </button>
+    </button>*@
+    <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
 
     <p style="color:red;">
         @Html.Label("",Convert.ToString((string)ViewBag.Error))

@@ -90,16 +90,16 @@ namespace ERD.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AddAnEnrollment(Enrollment enrollment)
+        public ActionResult Create(Enrollment enrollment)
         {
             var result = _enrollmentService.AddAnEnrollment(enrollment);
             if (result == "Successfully Enrolled")
                 return RedirectToAction("Index");
-            else if (result == "Enrollment already esists")
+            else if (result == "Enrollment already exists")
                 ViewBag.Error = result;
             else if (result == "You can choose upto 4 activities only")
                 ViewBag.Error = result;
-            else if (result == "Max enrollment for team reached")
+            else if (result == "Max enrollment for team reached.")
                 ViewBag.Error = result;
 
             var TypeDropDown = _context.Employees.ToList();
@@ -269,7 +269,7 @@ namespace ERD.Controllers
             ViewBag.TypeDropDown2 = TypeDropDown2;
             ViewBag.TypeDropDown3 = TypeDropDown3;
             var result = _enrollmentService.UpdateAnEnrollment(id, enrollment);
-            if (result == "Successfully Enrolled")
+            if (result == "Successfully Updated")
                 return RedirectToAction("Index");
             else if (result == "Enrollment already exists")
                 ViewBag.Error = result;

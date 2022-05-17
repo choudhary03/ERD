@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ERD.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 
 namespace ERD.Service
@@ -17,30 +18,30 @@ namespace ERD.Service
             _context = context;
         }
 
-        public bool AddVenue(Venue venues)
+        public string AddVenue(Venue venues)
         {
             try
             {
                 _context.Venues.Add(venues);
                 _context.SaveChanges();
-                return true;
+                return "Successfully Added";
 
             }
-            catch (Exception)
+            catch (DbUpdateException)
             {
-                return false;
+                return "Venue already exists";
             }
         }
 
-        public bool DeleteAnVenue(Venue venues)
+        public bool DeleteVenue(Venue venues)
         {
             try
             {
 
-                var emp = _context.Venues.Where(x => x.ID == venues.ID).FirstOrDefault();
-                if (emp != null)
+                var obj = _context.Venues.Where(x => x.ID == venues.ID).FirstOrDefault();
+                if (obj != null)
                 {
-                    _context.Venues.Remove(emp);
+                    _context.Venues.Remove(obj);
                     _context.SaveChanges();
                     return true;
                 }
@@ -56,31 +57,37 @@ namespace ERD.Service
             }
         }
 
-        public bool UpdateAnVenue(Venue venues)
+        public string UpdateVenue(int id, Venue venues)
         {
             try
             {
-                var emp = _context.Venues.Where(x => x.ID == venues.ID).FirstOrDefault();
-                if (emp != null)
-                {
-                    //Venue ServicesVenue = new Venue();
-                    //ServicesVenue.ID = venues.ID;
+                //var emp = _context.Venues.Where(x => x.ID == venues.ID).FirstOrDefault();
+                //if (emp != null)
+                //{
+                //    //Venue ServicesVenue = new Venue();
+                //    //ServicesVenue.ID = venues.ID;
 
-                    emp.Name = venues.Name;
-                    emp.ActivityID = venues.ActivityID;
+                //    emp.Name = venues.Name;
+                //    emp.ActivityID = venues.ActivityID;
 
-                    _context.SaveChanges();
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                //    _context.SaveChanges();
+                //    return true;
+                //}
+                //else
+                //{
+                //    return false;
+                //}
+                var obj = GetVenueDetails(id);
 
+                obj.Name = venues.Name;
+                obj.ActivityID = venues.ActivityID;
+
+                _context.SaveChanges();
+                return "Successfully Updated";
             }
-            catch (Exception)
+            catch (DbUpdateException)
             {
-                return false;
+                return "Venue already exists";
             }
         }
 
@@ -88,10 +95,10 @@ namespace ERD.Service
         {
             try
             {
-                var emp = _context.Venues.Where(x => x.ID == id).FirstOrDefault();
-                if (emp != null)
+                var obj = _context.Venues.Where(x => x.ID == id).FirstOrDefault();
+                if (obj != null)
                 {
-                    return emp;
+                    return obj;
                 }
                 else
                 {
@@ -108,10 +115,10 @@ namespace ERD.Service
         {
             try
             {
-                List<Venue> emp = _context.Venues.ToList();
-                if (emp != null)
+                List<Venue> obj = _context.Venues.Include(x => x.Activity).ToList();
+                if (obj != null)
                 {
-                    return emp;
+                    return obj;
                 }
                 else
                 {

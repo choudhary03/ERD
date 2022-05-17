@@ -9,47 +9,51 @@
 <h4>Team</h4>
 <hr />
 
-<form method ="post">
-  <br />
-    
-  <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-  </div>
-   <div class="form-group">
-                <label asp-for="MaxLimit" class="control-label"></label>
-                <input asp-for="MaxLimit" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-  </div>
-       <br />
-       <br />
-       <select asp-for ="ActivityID">
-           <option selected>--Activity--</option>
-            @foreach (var item in activityListItem)
-                    {
-                        <option value="@item.ActivityID">@item.ActivityName</option>
-                    }
-       </select>
-       <br />
-       <br />
+<form method="post">
+    <br />
 
-       
-  @*     @if (ViewBag.ErrorMessage != null)
-    {
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaxLimit" class="control-label"></label>
+        <input asp-for="MaxLimit" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <br />
+    <br />
+    <select asp-for="ActivityID">
+        <option selected>Choose Activity</option>
+        @foreach (var item in activityListItem)
+        {
+            <option value="@item.ID">@item.Name</option>
+        }
+    </select>
+    <br />
+    <br />
+
+
+    @*     @if (ViewBag.ErrorMessage != null)
+        {
         <h1>@ViewBag.ErrorMessage</h1>
-    }*@
-    <button type ="submit" id= "button" class= "btn btn-primary">
-       Create
-   </button>
+        }*@
+    @*<button type ="submit" id= "button" class= "btn btn-primary">
+        Create
+        </button>*@
 
-   <p style = "color:red;">
-           @Html.Label("",Convert.ToString((string)ViewBag.DuplicateError))
-       </p> 
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
 
-       <p style = "color:red;">
-           @Html.Label("",Convert.ToString((string)ViewBag.OverlimitError))
-       </p> 
+    <p style="color:red;">
+        @Html.Label("",Convert.ToString((string)ViewBag.DuplicateError))
+    </p>
+
+    <p style="color:red;">
+        @Html.Label("",Convert.ToString((string)ViewBag.OverlimitError))
+    </p>
 </form>
 
 <div>

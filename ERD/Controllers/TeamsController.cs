@@ -61,9 +61,9 @@ namespace ERD.Controllers
         public ActionResult Create(Team team)
         {
             var result = _teamService.CreateNewTeam(team);
-            if (result == "Successfully created")
+            if (result == "Successfully Created")
                 return RedirectToAction("Index");
-            else if (result == "Team already exists for this activity")
+            else if (result == "Team already exists")
                 ViewBag.DuplicateError = result;
 
             var TypeDropDown = _activitiesService.ListOfActivities().ToList();
@@ -105,7 +105,7 @@ namespace ERD.Controllers
             var result = _teamService.UpdateTeam(id, team);
             if (result == "Successfully Updated")
                 return RedirectToAction("Index");
-            else if (result == "Team already exists for this activity")
+            else if (result == "Team already exists ")
                 ViewBag.DuplicateError = result;
             return View(team);
         }

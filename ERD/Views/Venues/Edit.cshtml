@@ -42,10 +42,10 @@
        <br />
        <br />
        <select asp-for ="ActivityID">
-           <option selected>--Activity--</option>
+           <option selected>--Choose Activity--</option>
             @foreach (var item in activityListItem)
                     {
-                        <option value="@item.ActivityID">@item.ActivityName</option>
+                        <option value="@item.ID">@item.Name</option>
                     }
        </select>
        <br />

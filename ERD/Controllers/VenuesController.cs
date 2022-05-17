@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable disable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,143 +7,156 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
+using ERD.ViewModels;
+using ERD.Services;
+using ERD.Service;
 
 namespace ERD.Controllers
 {
     public class VenuesController : Controller
     {
-        private readonly ERDContext _context;
+        //private readonly ERDContext _context;
+        private readonly ILogger<VenuesController> _logger;
+        private readonly VenueService _venueService;
+        private readonly ActivitiesService _activitiesService;
 
-        public VenuesController(ERDContext context)
+        public VenuesController(ILogger<VenuesController> logger, VenueService venueService, ActivitiesService activitiesService)
         {
-            _context = context;
+            //_context = context;
+            _venueService = venueService;
+            _activitiesService = activitiesService;
+            _logger = logger;
+            _logger.LogDebug(1, "NLog injected into Venues Controller");
         }
 
-        
+
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Venues.ToListAsync());
+            return View(_venueService.ListOfVenues().ToList());
         }
 
-        
-        public async Task<IActionResult> Details(int? id)
+
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null)
+            var obj = _venueService.GetVenueDetails(id);
+
+            if (obj == null)
             {
                 return NotFound();
             }
 
-            var venue = await _context.Venues
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (venue == null)
-            {
-                return NotFound();
-            }
+            return View(obj);
+        }
+
+
+
+        public IActionResult Create()
+        {
+            var TypeDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.TypeDropDown = TypeDropDown;
+
+            return View();
+        }
+
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(Venue venue)
+        {
+            var result = _venueService.AddVenue(venue);
+            if (result == "Successfully Added")
+                return RedirectToAction("Index");
+            else if (result == "Venue already exists")
+                ViewBag.Error = result;
+
+            var TypeDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.TypeDropDown = TypeDropDown;
 
             return View(venue);
         }
 
-        
-        public IActionResult Create()
+        public IActionResult OverLimit()
         {
             return View();
         }
 
-        
+        public IActionResult Duplicate()
+        {
+            return View();
+        }
+
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var obj = _venueService.GetVenueDetails(id);
+
+            var TypeDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.TypeDropDown = TypeDropDown;
+            return View(obj);
+        }
+
+
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,MaxLimit")] Venue venue)
+        //[ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Venue venue)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(venue);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+            //if (id != venue.ID)
+            //{
+            //    return NotFound();
+            //}
+
+            //if (ModelState.IsValid)
+            //{
+            //    try
+            //    {
+            //        _context.Update(venue);
+            //        await _context.SaveChangesAsync();
+            //    }
+            //    catch (DbUpdateConcurrencyException)
+            //    {
+            //        if (!VenueExists(venue.ID))
+            //        {
+            //            return NotFound();
+            //        }
+            //        else
+            //        {
+            //            throw;
+            //        }
+            //    }
+            //    return RedirectToAction(nameof(Index));
+            //}
+            var TypeDropDown = _activitiesService.ListOfActivities().ToList();
+
+            ViewBag.TypeDropDown = TypeDropDown;
+
+            var result = _venueService.UpdateVenue(id, venue);
+            if (result == "Successfully Updated")
+                return RedirectToAction("Index");
+            else if (result == "Venue already exists")
+                ViewBag.Error = result;
             return View(venue);
+            
         }
 
-       
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
 
-            var venue = await _context.Venues.FindAsync(id);
-            if (venue == null)
-            {
-                return NotFound();
-            }
-            return View(venue);
+        public async Task<IActionResult> Delete(int id)
+        {
+            var obj = _venueService.GetVenueDetails(id);
+            return View(obj);
         }
 
-        
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,MaxLimit")] Venue venue)
-        {
-            if (id != venue.ID)
-            {
-                return NotFound();
-            }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(venue);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!VenueExists(venue.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(venue);
-        }
-
-        
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var venue = await _context.Venues
-                .FirstOrDefaultAsync(m => m.ID == id);
-            if (venue == null)
-            {
-                return NotFound();
-            }
-
-            return View(venue);
-        }
-
-        
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var venue = await _context.Venues.FindAsync(id);
-            _context.Venues.Remove(venue);
-            await _context.SaveChangesAsync();
+            var result = _venueService.DeleteVenue(_venueService.GetVenueDetails(id));
             return RedirectToAction(nameof(Index));
-        }
-
-        private bool VenueExists(int id)
-        {
-            return _context.Venues.Any(e => e.ID == id);
         }
     }
 }

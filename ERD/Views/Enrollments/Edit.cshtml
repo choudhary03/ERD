@@ -74,7 +74,7 @@
            <option selected>--Employee--</option>
             @foreach (var item in employeeListItem)
                     {
-                        <option value="@item.EmployeeID">@item.EmployeeName</option>
+                        <option value="@item.ID">@item.Name</option>
                     }
        </select>
     <br />
@@ -83,7 +83,7 @@
            <option selected>--Activity--</option>
             @foreach (var item in activityListItem)
                     {
-                        <option value="@item.ActivityID">@item.ActivityName</option>
+                        <option value="@item.ID">@item.Name</option>
                     }
        </select>
        <br />

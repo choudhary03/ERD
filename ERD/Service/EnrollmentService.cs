@@ -116,7 +116,7 @@ namespace ERD.Services
                     enroll.TeamID = enrollment.TeamID;
 
                     _context.SaveChanges();
-                    return "Successfully Enrolled";
+                    return "Successfully Updated";
                 }
                 else
                     return "Max enrollment for team reached";
@@ -152,7 +152,7 @@ namespace ERD.Services
         {
             try
             {
-                List<Enrollment> enroll = _context.Enrollments.ToList();
+                List<Enrollment> enroll = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).Include(x => x.Team).ToList();
                 if (enroll != null)
                 {
                     return enroll;

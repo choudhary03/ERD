@@ -2,7 +2,7 @@
 
 @{
     ViewData["Title"] = "Create";
-    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     var activityListItem = ViewBag.TypeDropDown;
 }
 
@@ -45,15 +45,14 @@
            <option selected>--Activity--</option>
             @foreach (var item in activityListItem)
                     {
-                        <option value="@item.ActivityID">@item.ActivityName</option>
+                        <option value="@item.ID">@item.Name</option>
                     }
        </select>
        <br />
        <br />
-
-        <button type ="submit" id= "button" class= "btn btn-primary">
-       Create
-   </button>
+       <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
 
    <p style = "color:red;">
            @Html.Label("",Convert.ToString((string)ViewBag.Error))

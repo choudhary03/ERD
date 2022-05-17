@@ -26,7 +26,7 @@
        </select>
 
         <select asp-for ="ActivityID" >
-           <option selected>--Assign Activity--</option>
+           <option selected>--Select An Activity--</option>
            @foreach (var item in activityListDetails)
                     {
                         <option value="@item.ID">@item.Name</option>
@@ -34,13 +34,17 @@
        </select>
 
        <select asp-for ="TeamID">
-           <option selected>--Team--</option>
+           <option selected>--Select Team--</option>
             @foreach (var item in teamListItem)
                     {
                         <option value="@item.ID">@item.Name</option>
                     }
        </select>
        <br />
+       <br />
+       <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+       </div>
 
         <p style = "color:red;">
            @*@ViewBag.ExistingActivity*@
@@ -52,9 +56,7 @@
        </p> 
        <br />
 
-   <button type ="submit" class= "btn btn-primary">
-       Create
-   </button>
+   
    
 </form>
 <div>
