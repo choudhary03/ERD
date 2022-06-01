@@ -1,6 +1,4 @@
-﻿
-
-@model Refreshment_Dashboard.Models.Enrollment
+﻿@model Refreshment_Dashboard.Models.Enrollment
 
 @{
     ViewData["Title"] = "Create";
@@ -9,55 +7,103 @@
     var teamListItem = ViewBag.TypeDropDown3;
     //var EmployeeListDD = TempData["EmployeeList"];
 }
+@*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css"  
+        rel="stylesheet" type="text/css" />  
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>  
+    <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css"  
+        rel="stylesheet" type="text/css" />  
+    <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js"  
+        type="text/javascript"></script> *@
+
+       
 
 <h1>Create</h1>
 
 <h4>Enrollment</h4>
 <hr />
 
-<form method ="post">
-  
-    <select asp-for ="EmployeeID" >
-           <option selected>--Choose Employee--</option>
-           @foreach (var item in employeeListDetails)
-                    {
-                        <option value="@item.ID">@item.Firstname</option>
-                    }
-       </select>
+<form method="post">
 
-        <select asp-for ="ActivityID" >
-           <option selected>--Select An Activity--</option>
-           @foreach (var item in activityListDetails)
-                    {
-                        <option value="@item.ID">@item.Name</option>
-                    }
-       </select>
+    <select asp-for="EmployeeID" multiple="multiple">
+        <option selected>--Choose Employee--</option>
+        @foreach (var item in employeeListDetails)
+        {
+            <option value="@item.ID">@item.Firstname </option>
+        }
+    </select>
 
-       <select asp-for ="TeamID">
-           <option selected>--Select Team--</option>
-            @foreach (var item in teamListItem)
-                    {
-                        <option value="@item.ID">@item.Name</option>
-                    }
-       </select>
-       <br />
-       <br />
-       <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-       </div>
+   @*  <div>
+          Select Employees 
+          <select id="EmployeeID" multiple="multiple" >
+        @foreach (var item in employeeListDetails)
+        {
+            <option value="@item.ID">@item.Firstname </option>
+        }
+        </select>
+     </div>*@
 
-        <p style = "color:red;">
-           @*@ViewBag.ExistingActivity*@
-            @Html.Label("",Convert.ToString((string)ViewBag.ExistingActivityError))
-       </p> 
-       <p style = "color:red;">
-           @*@ViewBag.ExceedingActivity*@
-           @Html.Label("",Convert.ToString((string)ViewBag.ExceedingActivityError))
-       </p> 
-       <br />
+    <select asp-for="ActivityID">
+        <option selected>--Select An Activity--</option>
+        @foreach (var item in activityListDetails)
+        {
+            <option value="@item.ID">@item.Name</option>
+        }
+    </select>
 
-   
-   
+    <select asp-for="TeamID">
+        <option selected>--Select Team--</option>
+        @foreach (var item in teamListItem)
+        {
+            <option value="@item.ID">@item.Name</option>
+        }
+    </select>
+    <br />
+    <br />
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+
+    <p style="color:red;">
+        @*@ViewBag.ExistingActivity*@
+        @Html.Label("",Convert.ToString((string)ViewBag.ExistingActivityError))
+    </p>
+    <p style="color:red;">
+        @*@ViewBag.ExceedingActivity*@
+        @Html.Label("",Convert.ToString((string)ViewBag.ExceedingActivityError))
+    </p>
+    <br />
+ 
+    <script type="text/javascript">
+        $(function () {
+            $('#EmployeeID').multiselect({
+                includeSelectAllOption: true
+            });
+        });
+    </script> 
+
+
+    @section scripts{
+    <script>
+        $(document).ready(function(){
+          $("#ActivityID").change(function(){
+            var selectedIds = $(this).val();
+              $.ajax({url: '@Url.Action("CallResult" , "Enrollments")', type:"post", data:{id:selectedIds} ,success: function(result){
+              if(result != null)
+              {
+                  $("#TeamID").empty();
+                    $.each(result, function (i,value) {
+                        $("#TeamID").append($("<option></option>").val(value.value).html(value.text));
+                    });
+              }
+            }});
+          });
+        });
+    </script>
+    }
+
+    
+
 </form>
 <div>
     <a asp-action="Index">Back to List</a>

@@ -316,5 +316,14 @@ namespace ERD.Controllers
             {
                 return _context.Enrollments.Any(e => e.ID == id);
             }
+
+        [HttpPost]
+        public async Task<JsonResult> CallResult(int id)
+        {
+            var teamList = _teamService.AllTeam().Where(x => x.ActivityID == id).ToList();
+            var teamDropDownItems = teamList.Select(x => new SelectListItem { Value = x.ID.ToString(), Text = x.Name }).ToList();
+            var returnValue = Json(teamDropDownItems);
+            return Json(teamDropDownItems);
         }
+    }
     }

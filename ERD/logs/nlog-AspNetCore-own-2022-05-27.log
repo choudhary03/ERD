@@ -1,0 +1,9 @@
+2022-05-27 11:33:30.5734|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-27 11:33:37.1316|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-27 11:33:37.2529|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-27 11:33:37.2529|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-27 11:33:37.2778|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-27 11:33:39.5006|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-27 11:33:47.5608|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-27 11:33:47.8207|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-27 11:34:48.7669|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: http://localhost/Identity/Account/Logout|action: |ERD.Areas.Identity.Pages.Account.LogoutModel.OnPost

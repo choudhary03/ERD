@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
-    [Authorize]
+    [Authorize /*(Users = "Raman,Admin")*/]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -1,0 +1,116 @@
+2022-05-30 11:40:39.1329|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-30 11:40:43.9361|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-30 11:40:43.9770|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 11:40:43.9770|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 11:40:43.9770|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 11:40:46.2521|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-30 11:41:00.7741|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:41:12.6323|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:41:26.3041|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. |url: http://localhost/Identity/Account/Login|action: |ERD.Areas.Identity.Pages.Account.LoginModel+<OnPostAsync>d__21.MoveNext
+2022-05-30 11:41:26.3734|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-30 11:41:26.5548|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-30 11:42:04.5526|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:42:06.0855|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:42:07.7019|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:42:15.8691|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:42:17.3576|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Create|action: Create|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:42:26.4397|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:42:28.4076|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings/Create|action: Create|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:42:30.3585|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 11:45:37.8115|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 11:45:39.3346|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues/Create|action: Create|ERD.Controllers.VenuesController..ctor
+2022-05-30 11:45:49.9635|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 11:45:52.2566|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:45:55.4546|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings/Create|action: Create|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:46:12.6168|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 11:46:15.8509|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues/Create|action: Create|ERD.Controllers.VenuesController..ctor
+2022-05-30 11:48:08.8945|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:48:09.8994|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:48:11.1516|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:48:14.0081|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:48:16.4452|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Create|action: Create|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:48:20.4982|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:48:22.0943|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings/Create|action: Create|ERD.Controllers.BookingsController..ctor
+2022-05-30 11:48:36.7022|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:48:38.7344|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Create|action: Create|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:48:51.6308|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:48:53.9558|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 11:49:28.5201|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 11:49:30.8334|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Create|action: Create|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:10:01.1197|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-30 13:10:05.6168|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-30 13:10:05.6720|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:10:05.6784|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:10:05.6784|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:10:07.5983|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-30 13:10:14.6239|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-30 13:10:15.0495|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-30 13:10:34.9758|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:10:37.1590|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:10:44.0379|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:10:53.7616|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:10:58.2085|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:11:03.0438|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:11:06.3728|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:11:15.8680|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:12:36.9800|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-30 13:12:40.0976|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-30 13:12:40.1988|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:12:40.2149|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:12:40.2344|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:12:46.5069|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-30 13:12:47.7199|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-30 13:12:53.1494|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-30 13:12:58.7708|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:13:04.6276|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:13:12.3463|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:13:15.6259|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Create|action: Create|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:13:37.4464|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Create|action: Create|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:13:38.2187|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:13:50.1571|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:13:51.9915|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:13:57.8798|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/CallResult|action: CallResult|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:14:01.3941|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Create|action: Create|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:14:01.6707|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:14:12.1656|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:20.6499|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues/Details/3|action: Details|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:28.0005|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:30.3236|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues/Details/1|action: Details|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:32.8272|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:34.3344|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues/Create|action: Create|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:44.5400|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:47.4568|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues/Details/1|action: Details|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:50.3938|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:14:57.4320|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 13:14:59.4536|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings/Create|action: Create|ERD.Controllers.BookingsController..ctor
+2022-05-30 13:15:14.0113|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 13:15:15.8116|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller |url: http://localhost/Venues|action: Index|ERD.Controllers.VenuesController..ctor
+2022-05-30 13:15:17.9342|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 13:15:19.4687|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings/Details/1|action: Details|ERD.Controllers.BookingsController..ctor
+2022-05-30 13:15:21.8408|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller |url: http://localhost/Bookings|action: Index|ERD.Controllers.BookingsController..ctor
+2022-05-30 13:15:23.2793|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:15:24.6515|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Details/1|action: Details|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:15:38.8113|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:15:44.5571|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams|action: Index|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:15:45.9522|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller |url: http://localhost/Teams/Details/1|action: Details|ERD.Controllers.TeamsController..ctor
+2022-05-30 13:15:48.0864|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:18:09.3988|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-30 13:18:11.9002|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-30 13:18:11.9437|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:18:11.9437|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:18:11.9569|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:18:13.8320|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-30 13:18:15.0309|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-30 13:18:19.5115|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-30 13:18:22.1581|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:18:24.1461|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments/Details/1|action: Details|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:18:34.0206|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller |url: http://localhost/Enrollments|action: Index|ERD.Controllers.EnrollmentsController..ctor
+2022-05-30 13:24:00.7127|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-05-30 13:24:03.3419|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-05-30 13:24:03.4048|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:24:03.4131|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:24:03.4131|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-05-30 13:24:04.7772|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-05-30 13:24:05.4261|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-05-30 13:24:09.5997|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! |url: http://localhost/|action: Index|ERD.Controllers.HomeController.Index
+2022-05-30 13:24:16.4334|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. |url: http://localhost/Identity/Account/Logout|action: |ERD.Areas.Identity.Pages.Account.LogoutModel.OnPost
