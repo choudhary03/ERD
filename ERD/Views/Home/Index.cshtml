@@ -3,56 +3,79 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
+@model IEnumerable<ERD.ViewModels.EnrollmentViewModelAutomapper>
+
 @*@{
     ViewData["Title"] = "Home Page";
     0
-}
+    }
 
-<div class="text-center">
+    <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    </div>
 *@
 
-@model IEnumerable<ERD.ViewModels.EnrollmentDetailViewModel>
+@*@model IEnumerable<ERD.ViewModels.EnrollmentDetailViewModel>*@
+
 
 @{
     ViewData["Title"] = "Index";
 }
 @if (SignInManager.IsSignedIn(User))
 {
-<Center><h1>Employee Enrollment Details</h1></Center>
+    <Center><h1>Employee Enrollment Details</h1></Center>
 
-<p>
-    <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enroll An Employee</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
+    <p>
+        <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enroll An Employee</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
                 <th>Employee Name</th>
                 <th>Activities Enrolled</th>
-        </tr>
-    </thead>
-    <tbody>
+            </tr>
+        </thead>
+        <tbody>
 
-@foreach (var item in Model) {
-            var activityNameList = "";   
-            <tr>
-            <td>@item.employees.Firstname</td>
-            @if(item.activityList.Count > 0)
+
+            @*From Phase 2
+            @foreach (var item in Model)
             {
-                    activityNameList = string.Join(" , ", item.activityList.Select(x => x.Name));
-                }
-            <td>@activityNameList</td>
-        </tr>
-}
-    </tbody>
-</table>
+                var activityNameList = "";
+                <tr>
+                    <td>@item.Employees.Firstname</td>
+                    @if (item.activityList.Count > 0)
+                    {
+                        activityNameList = string.Join(" , ", item.activityList.Select(x => x.Name));
+                    }
+                    <td>@activityNameList</td>
+                </tr>
+            }*@
+            @foreach (var item in Model)
+            {
+                var activityNameList = "";
+                <tr>
+                    <td>
+                        @item.Firstname
+                    </td>
+                    @if (item.ActivityList.Count > 0)
+                    {
+                        activityNameList = string.Join(", ", item.ActivityList);
+                    }
+                    <td>
+                        @activityNameList
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
 }
 else
 {
-<li class="nav-item">
+    <li class="nav-item">
         <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
     </li>
-   
+
 }

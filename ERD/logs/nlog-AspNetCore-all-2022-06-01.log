@@ -191,3 +191,24 @@
 2022-06-01 13:56:56.5572|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
 2022-06-01 13:56:56.8871|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
 2022-06-01 13:57:00.2666|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-01 14:57:42.0508|0|DEBUG|Program|init main 
+2022-06-01 14:57:47.0108|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-01 14:57:47.0526|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-01 14:57:47.0526|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-01 14:57:47.0526|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-01 14:57:49.4147|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-01 14:58:28.8115|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-01 14:58:28.8662|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-01 14:58:29.2658|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-06-01 14:58:31.9813|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-01 14:58:33.8675|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-01 15:01:10.1561|0|DEBUG|Program|init main 
+2022-06-01 15:01:12.7334|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-01 15:01:12.7870|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-01 15:01:12.7870|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-01 15:01:12.7870|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-01 15:01:15.8481|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-01 15:01:16.7803|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-01 15:01:22.5389|0|INFO|ERD.Controllers.HomeController|Hello, this is the index! 
+2022-06-01 15:01:26.1943|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-01 15:01:28.3487|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
