@@ -16,7 +16,7 @@ namespace ERD.Controllers
     public class TeamsAPIController : ControllerBase
     {
         private readonly TeamsService teamService;
-        public TeamsController(TeamsService team)
+        public TeamsAPIController(TeamsService team)
         {
             teamService = team;
         }
@@ -44,14 +44,30 @@ namespace ERD.Controllers
 
         // POST api/<TeamsAPIController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<Team> PostTeam(Team team)
         {
+            var result = teamService.CreateNewTeam(team);
+            if (result == "Success")
+                return Ok(team);
+            else
+                return BadRequest();
         }
 
         // PUT api/<TeamsAPIController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult PutTeam(int id, Team team)
         {
+            if (id != team.ID)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                if (teamService.UpdateTeam(id, team) == "Success")
+                    return Ok();
+                else
+                    return BadRequest();
+            }
         }
 
         // DELETE api/<TeamsAPIController>/5
