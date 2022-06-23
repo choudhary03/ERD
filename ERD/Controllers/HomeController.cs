@@ -15,7 +15,7 @@ using AutoMapper;
 
 namespace ERD.Controllers
 {
-    [Authorize /*(Users = "Raman,Admin")*/]
+    [Authorize (Roles = "SuperAdmin")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

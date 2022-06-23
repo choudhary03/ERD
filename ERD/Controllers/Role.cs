@@ -17,12 +17,12 @@ namespace ERD.Controllers
     {
         //private readonly ERDContext _context;
         private readonly RoleManager<IdentityRole> roleManager;
-        private UserManager<IdentityUser> userManager;
+        private readonly UserManager<IdentityUser> userManager;
 
         public Role(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
         {
             this.roleManager = roleManager;
-            
+            this.userManager = userManager;
         }
 
         [HttpGet]
@@ -83,7 +83,7 @@ namespace ERD.Controllers
             };
 
 
-            foreach (var user in userManager.Users)
+            foreach (var user in userManager.Users.ToList())
             {
                 if (await userManager.IsInRoleAsync(user, role.Name))
                 {
@@ -139,7 +139,7 @@ namespace ERD.Controllers
 
             var model = new List<UserRole>();
 
-            foreach (var user in userManager.Users)
+            foreach (var user in userManager.Users.ToList())
             {
                 var userRoleViewModel = new UserRole
                 {
