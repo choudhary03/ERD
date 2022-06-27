@@ -39,15 +39,26 @@ namespace ERD.Controllers
             var objEnrollmentList = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToList();
             var item = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToList();
             var mappedItem = _mapper.Map<List<EnrollmentViewModelAutomapper>>(item);
-            
+
+            //var enrollmentGroupByEmployee = item.GroupBy(c => c.Employee.Firstname)
+            //    .Select(d => new EnrollmentViewModelAutomapper
+            //    {
+            //        Firstname = d.Key,
+            //        ActivityList = d.Select(e => e.Activity.Name).ToList()
+            //    });
+            //return View(enrollmentGroupByEmployee);
+
             var enrollmentGroupByEmployee = item.GroupBy(c => c.Employee.Firstname)
-                .Select(d => new EnrollmentViewModelAutomapper
-                {
-                    Firstname = d.Key,
-                    ActivityList = d.Select(e => e.Activity.Name).ToList()
-                });
+               .Select(d => new EnrollmentViewModelAutomapper
+               {
+                   Firstname = d.Key,
+                   ActivityList = d.Select(e => e.Activity.Name).ToList()
+               });
             return View(enrollmentGroupByEmployee);
 
+            //return View(employeeGroupedActivityList);
+
+            //return View(mappedItem);
         }
 
         //From Second Phase
@@ -76,7 +87,7 @@ namespace ERD.Controllers
 
 
         //return View(ListOfActivity);
-       
+
         //}
 
         public IActionResult Privacy()

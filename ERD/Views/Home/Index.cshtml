@@ -59,7 +59,7 @@
                     <td>
                         @item.Firstname
                     </td>
-                    @if (item.ActivityList.Count > 0)
+                    @if (item.ActivityList != null)
                     {
                         activityNameList = string.Join(", ", item.ActivityList);
                     }
