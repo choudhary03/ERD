@@ -1,4 +1,9 @@
-﻿@model IEnumerable<Refreshment_Dashboard.Models.Activity>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@model IEnumerable<Refreshment_Dashboard.Models.Activity>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,9 +12,12 @@
 
 <center><h1>List of Activities</h1></center>
 
-<p>
-    <a asp-action="Create">Add New Activity</a>
-</p>
+ @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
+    <p>
+        <a asp-action="Create">Add New Activity</a>
+    </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -19,6 +27,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
+                <th>Action</th>
+}
         </tr>
     </thead>
     <tbody>
@@ -30,11 +42,14 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
+}
         </tr>
 }
     </tbody>

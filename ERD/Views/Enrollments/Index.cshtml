@@ -1,4 +1,8 @@
-﻿@model IEnumerable<Refreshment_Dashboard.Models.Enrollment>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model IEnumerable<Refreshment_Dashboard.Models.Enrollment>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,58 +11,51 @@
 
 <center><h1>Enrolled Employees </h1></center>
 
-<p>
-    <a asp-action="Create">Enroll New Employee</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Enrollment No.</th>
-            <th>Activity Name</th>
-            <th>Employee Name</th>
-             <th>Team</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @item.ID
-            </td>
-            <td>
-                @item.Activity.Name
-            </td>
-            <td>   
-                @item.Employee.Firstname
-            </td>
-            <td>
-                @item.Team.Name
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+@if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
+    <p>
+        <a asp-action="Create">Enroll New Employee</a>
+    </p>
 }
-    </tbody>
-</table>
-@*@section Scripts {
-    <script type="text/javascript">
-    
-    function openSuccessModal (strMessage) {
-        var myDiv = document.getElementById("MyModalSuccessAlertBody"); 
-        myDiv.innerHTML = strMessage;
-        $('#myModalSuccess').modal("show");
-    }
+<table class="table">
+        <thead>
+            <tr>
+                <th>Enrollment No.</th>
+                <th>Activity Name</th>
+                <th>Employee Name</th>
+                <th>Team</th>
+                 @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
+                <th>Action</th>
+}
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.ID
+                    </td>
+                    <td>
+                        @item.Activity.Name
+                    </td>
+                    <td>
+                        @item.Employee.Firstname
+                    </td>
+                    <td>
+                        @item.Team.Name
+                    </td>
 
-
-$(document).ready(function () {
-var msg = "@TempData["SuccessMessage"]";
-if (msg)
-openSuccessModal(msg);
-});
-
-</script>
-}*@
+                    @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+                    {
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>

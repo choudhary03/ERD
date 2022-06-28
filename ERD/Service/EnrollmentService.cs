@@ -78,29 +78,7 @@ namespace ERD.Services
 
         public string UpdateAnEnrollment(int ID, Enrollment enrollment)
         {
-            //try
-            //{
-            //    var emp = _context.Enrollments.Where(x => x.ID == enrollment.ID).FirstOrDefault();
-            //    if (emp != null)
-            //    {
-            //        Enrollment ServicesEnrollment = new Enrollment();
-            //        ServicesEnrollment.ActivityID = enrollment.ActivityID;
-            //        ServicesEnrollment.EmployeeID = enrollment.EmployeeID;
-
-            //        _context.SaveChanges();
-            //        return true;
-            //    }
-            //    else
-            //    {
-            //        return false;
-            //    }
-
-            //}
-            //catch (Exception)
-            //{
-            //    return false;
-            //}
-
+           
             try
             {
                 var teamMaxCount = _context.Enrollments.Where(x => x.TeamID == enrollment.TeamID).Where(x => x.ActivityID == enrollment.ActivityID).Count();
@@ -132,7 +110,7 @@ namespace ERD.Services
         {
             try
             {
-                var enroll = _context.Enrollments.Where(x => x.ID == id).FirstOrDefault();
+                var enroll = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).Include(x => x.Team).Where(x => x.ID == id).FirstOrDefault();
                 if (enroll != null)
                 {
                     return enroll;

@@ -46,9 +46,7 @@
     <br />
     <br />
 
-   @* <button type="submit" id="button" class="btn btn-primary">
-        Create
-    </button>*@
+
     <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -66,21 +64,3 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section scripts{
-    <script>
-$(document).ready(function(){
-  $("#ActivityID").change(function(){
-    var selectedIds = $(this).val();
-      $.ajax({url: '@Url.Action("GetVenueList" , "Bookings")', type:"post", data:{id:selectedIds} ,success: function(result){
-      if(result != null)
-      {
-          $("#VenueID").empty();
-            $.each(result, function (i,value) {
-                $("#VenueID").append($("<option></option>").val(value.value).html(value.text));
-            });
-      }
-    }});
-  });
-});
-</script>
-}

@@ -5,20 +5,6 @@
 
 @model IEnumerable<ERD.ViewModels.EnrollmentViewModelAutomapper>
 
-@*@{
-    ViewData["Title"] = "Home Page";
-    0
-    }
-
-    <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    </div>
-*@
-
-@*@model IEnumerable<ERD.ViewModels.EnrollmentDetailViewModel>*@
-
-
 @{
     ViewData["Title"] = "Index";
 }
@@ -42,20 +28,6 @@
         </thead>
         <tbody>
 
-
-            @*From Phase 2
-            @foreach (var item in Model)
-            {
-                var activityNameList = "";
-                <tr>
-                    <td>@item.Employees.Firstname</td>
-                    @if (item.activityList.Count > 0)
-                    {
-                        activityNameList = string.Join(" , ", item.activityList.Select(x => x.Name));
-                    }
-                    <td>@activityNameList</td>
-                </tr>
-            }*@
             @foreach (var item in Model)
             {
                 var activityNameList = "";

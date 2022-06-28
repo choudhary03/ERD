@@ -9,7 +9,6 @@ namespace ERD.Automapper
     {
         public AutoMapperProfile()
         {
-            //CreateMap<Enrollment, EnrollmentViewModelAutomapper>().ReverseMap();
             CreateMap<Enrollment, EnrollmentViewModelAutomapper>().ReverseMap();
             CreateMap<Enrollment, EnrollmentViewModelAutomapper>()
                 .ForMember(d => d.Firstname, s => s.MapFrom(src => src.Employee.Firstname))

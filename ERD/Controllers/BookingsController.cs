@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize]
     public class BookingsController : Controller
     {
         private readonly ILogger<BookingsController> _logger;
@@ -38,7 +38,7 @@ namespace ERD.Controllers
             return View(_bookingService.ListOfBookings().ToList());
         }
 
-       
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Details(int id)
         {
             var obj = _bookingService.GetBookingDetails(id);
@@ -51,7 +51,7 @@ namespace ERD.Controllers
             return View(obj);
         }
 
-        
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             var venueDropDown = _venueService.ListOfVenues().ToList();
@@ -62,7 +62,7 @@ namespace ERD.Controllers
             return View();
         }
 
-       
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Booking booking)
@@ -91,6 +91,7 @@ namespace ERD.Controllers
             return View();
         }
 
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int id)
         {
             var obj = _bookingService.GetBookingDetails(id);
@@ -103,7 +104,7 @@ namespace ERD.Controllers
             return View(obj);
         }
 
-        
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Booking booking)
@@ -122,14 +123,14 @@ namespace ERD.Controllers
             return View(booking);
         }
 
-        
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             var obj = _bookingService.GetBookingDetails(id);
             return View(obj);
         }
 
-       
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

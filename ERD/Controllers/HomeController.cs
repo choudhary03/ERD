@@ -40,13 +40,6 @@ namespace ERD.Controllers
             var item = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToList();
             var mappedItem = _mapper.Map<List<EnrollmentViewModelAutomapper>>(item);
 
-            //var enrollmentGroupByEmployee = item.GroupBy(c => c.Employee.Firstname)
-            //    .Select(d => new EnrollmentViewModelAutomapper
-            //    {
-            //        Firstname = d.Key,
-            //        ActivityList = d.Select(e => e.Activity.Name).ToList()
-            //    });
-            //return View(enrollmentGroupByEmployee);
 
             var enrollmentGroupByEmployee = item.GroupBy(c => c.Employee.Firstname)
                .Select(d => new EnrollmentViewModelAutomapper
@@ -56,39 +49,7 @@ namespace ERD.Controllers
                });
             return View(enrollmentGroupByEmployee);
 
-            //return View(employeeGroupedActivityList);
-
-            //return View(mappedItem);
         }
-
-        //From Second Phase
-        //public IActionResult Index()
-        //{
-        //   var ListOfActivity = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToList();
-
-        //    var GroupedListOfActivity = ListOfActivity.GroupBy(c => c.Employee.ID)
-        //        .Select(d => new EnrollmentDetailViewModel
-        //        {
-        //           employees = ListOfActivity.Where(y => y.Employee.ID == d.Key).Select(y => y.Employee).FirstOrDefault(), 
-        //           activityList = d.Select(e => e.Activity).ToList()
-        //         });
-
-        //    _logger.LogInformation("Hello, this is the index!");
-        //    return View(GroupedListOfActivity);
-
-        //From First phase
-        //var ListOfActivity = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity)
-        //    .GroupBy(c => c.Employee.Firstname)
-        //    .Select(d => new Enrollment
-        //    {
-        //        EmployeeName = d.Key,
-        //        ActName = string.Join(", ", d.Select(e => e.Activity.Name))
-        //    });
-
-
-        //return View(ListOfActivity);
-
-        //}
 
         [HttpGet]
         [AllowAnonymous]
@@ -101,13 +62,6 @@ namespace ERD.Controllers
         {
             return View();
         }
-
-
-        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //public IActionResult Error()
-        //{
-        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //}
 
     }
 }

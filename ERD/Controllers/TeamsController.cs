@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize]
     public class TeamsController : Controller
     {
         private readonly ILogger<TeamsController> _logger;
@@ -35,6 +35,7 @@ namespace ERD.Controllers
         }
 
         // GET: TeamsController/Details/5
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Details(int id)
         {
             var obj = _teamService.GetTeamDetails(id);
@@ -48,6 +49,7 @@ namespace ERD.Controllers
         }
 
         // GET: TeamsController/Create
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             var TypeDropDown = _activitiesService.ListOfActivities().ToList();
@@ -58,6 +60,7 @@ namespace ERD.Controllers
         }
 
         // POST: TeamsController/Create
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Team team)
@@ -85,6 +88,7 @@ namespace ERD.Controllers
         }
 
         // GET: TeamsController/Edit/5
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int id)
         {
             var obj = _teamService.GetTeamDetails(id);
@@ -96,6 +100,7 @@ namespace ERD.Controllers
         }
 
         // POST: TeamsController/Edit/5
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Team team)
@@ -113,6 +118,7 @@ namespace ERD.Controllers
         }
 
         // GET: TeamsController/Delete/5
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             var obj = _teamService.GetTeamDetails(id);
@@ -120,6 +126,7 @@ namespace ERD.Controllers
         }
 
         // POST: TeamsController/Delete/5
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

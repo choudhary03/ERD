@@ -40,3 +40,168 @@
 2022-06-28 09:21:53.5966|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
 2022-06-28 09:21:54.5441|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
 2022-06-28 09:22:15.7963|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 10:57:20.5755|0|DEBUG|Program|init main 
+2022-06-28 10:57:27.4844|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 10:57:27.5862|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 10:57:27.5862|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 10:57:27.6031|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 10:57:30.9407|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 10:57:38.3487|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 10:58:01.1862|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 11:02:59.2597|0|DEBUG|Program|init main 
+2022-06-28 11:03:02.3003|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 11:03:02.3537|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 11:03:02.3618|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 11:03:02.3618|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 11:03:04.4022|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 11:03:05.0939|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:32:13.1358|0|DEBUG|Program|init main 
+2022-06-28 12:32:23.0782|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 12:32:23.1424|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 12:32:23.1486|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 12:32:23.1486|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 12:32:24.7898|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 12:32:31.2560|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:33:01.2045|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:33:03.2898|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:33:07.0424|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 12:33:12.0497|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 12:33:15.5327|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:33:20.2947|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:33:22.1398|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 12:33:23.5419|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 12:33:26.2822|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 12:38:22.7328|0|DEBUG|Program|init main 
+2022-06-28 12:38:25.3008|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 12:38:25.3386|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 12:38:25.3386|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 12:38:25.3477|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 12:38:27.1742|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 12:38:27.8068|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:38:56.6801|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:38:58.6409|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:39:03.4527|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 12:39:05.0939|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 12:39:06.6795|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:39:09.4058|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-28 12:39:19.6482|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-28 12:39:19.6773|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:39:23.0326|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:39:28.6894|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:39:30.3644|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:39:31.7271|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 12:39:32.6669|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 12:39:47.7678|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:39:51.0511|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:40:01.7499|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:43:24.6076|0|DEBUG|Program|init main 
+2022-06-28 12:43:27.4173|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 12:43:27.4499|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 12:43:27.4499|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 12:43:27.4555|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 12:43:29.1622|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 12:43:29.8416|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:44:00.6083|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-28 12:44:07.6302|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-28 12:44:07.6667|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:44:25.9209|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 12:44:27.2815|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 12:44:28.7485|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 12:44:30.1055|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 12:44:31.7555|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:44:32.5885|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:44:34.3868|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 12:45:56.7202|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-28 13:02:48.7483|0|DEBUG|Program|init main 
+2022-06-28 13:02:54.3338|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:02:54.3752|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:02:54.3797|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:02:54.3797|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:02:56.6246|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:03:27.3998|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-28 13:03:27.5106|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:03:32.8811|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:03:34.4015|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:03:36.1475|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:03:39.2066|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:06:22.6359|0|DEBUG|Program|init main 
+2022-06-28 13:06:25.6212|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:06:25.6673|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:06:25.6673|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:06:25.6743|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:06:27.4703|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:06:28.2404|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:06:40.7495|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:06:44.8760|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:06:49.1698|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:06:52.4671|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:38:51.8094|0|DEBUG|Program|init main 
+2022-06-28 13:39:01.5742|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:39:01.6640|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:39:01.6640|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:39:01.6852|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:39:04.2171|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:39:14.5485|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:39:39.9437|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:39:43.8981|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:39:52.7409|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:39:56.6246|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:40:03.3452|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:42:40.7677|0|DEBUG|Program|init main 
+2022-06-28 13:42:44.6890|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:42:44.7441|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:42:44.7441|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:42:44.7441|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:42:47.1054|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:42:48.0199|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:43:05.1111|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:43:07.4804|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:43:12.5712|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:43:15.1983|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:43:16.5465|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:43:18.6629|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:43:20.6302|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:51:44.1056|0|DEBUG|Program|init main 
+2022-06-28 13:51:52.0848|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:51:52.1422|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:51:52.1509|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:51:52.1509|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:51:54.5451|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:51:55.5377|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:52:55.5643|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:53:00.1796|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:53:01.7272|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:53:03.1768|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:53:06.2318|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-28 13:54:20.6577|0|DEBUG|Program|init main 
+2022-06-28 13:54:26.4528|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:54:26.5051|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:54:26.5051|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:54:26.5051|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:54:29.2057|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:54:32.1494|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:54:47.3221|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:54:49.0721|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 13:54:51.0675|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 13:54:57.1915|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:54:59.6389|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:55:22.2186|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:55:24.9808|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:55:43.4326|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:55:45.5974|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:56:00.3695|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:56:02.0298|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:56:10.5304|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:56:15.6231|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 13:56:17.6926|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-28 13:56:21.3873|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:56:22.9715|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-28 13:58:51.6766|0|DEBUG|Program|init main 
+2022-06-28 13:58:56.5306|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 13:58:56.5820|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 13:58:56.5820|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 13:58:56.5820|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 13:58:58.9201|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 13:59:00.9258|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 13:59:13.7031|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-28 13:59:15.6000|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 

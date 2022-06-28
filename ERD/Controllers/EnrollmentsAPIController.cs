@@ -82,11 +82,5 @@ namespace ERD.Controllers.API
                 return Ok();
             }
         }
-
-
-        //private bool EnrollmentExists(int id)
-        //{
-        //    return _context.Enrollments.Any(e => e.ID == id);
-        //}
     }
 }

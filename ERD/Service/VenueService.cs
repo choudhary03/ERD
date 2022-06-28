@@ -61,22 +61,6 @@ namespace ERD.Service
         {
             try
             {
-                //var emp = _context.Venues.Where(x => x.ID == venues.ID).FirstOrDefault();
-                //if (emp != null)
-                //{
-                //    //Venue ServicesVenue = new Venue();
-                //    //ServicesVenue.ID = venues.ID;
-
-                //    emp.Name = venues.Name;
-                //    emp.ActivityID = venues.ActivityID;
-
-                //    _context.SaveChanges();
-                //    return true;
-                //}
-                //else
-                //{
-                //    return false;
-                //}
                 var obj = GetVenueDetails(id);
 
                 obj.Name = venues.Name;

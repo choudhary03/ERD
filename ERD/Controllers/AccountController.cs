@@ -9,12 +9,10 @@ namespace ERD.Controllers
     {
 
         private readonly UserManager<IdentityUser> userManager;
-        //private readonly SignInManager<IdentityUser> signInManager;
 
-        public AccountController(UserManager<IdentityUser> userManager /*SignInManager<IdentityUser> signInManager*/)
+        public AccountController(UserManager<IdentityUser> userManager)
         {
             this.userManager = userManager;
-            //this.signInManager = signInManager;
         }
 
         public IActionResult Index()

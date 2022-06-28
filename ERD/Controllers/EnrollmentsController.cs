@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-//using ERD.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
-    [Authorize (Roles = "SuperAdmin")]
+    [Authorize]
     public class EnrollmentsController : Controller
     {
         private readonly ILogger<EnrollmentsController> _logger;
@@ -40,25 +39,14 @@ namespace ERD.Controllers
         // GET: Enrollments
         public async Task<IActionResult> Index()
         {
-            //return View(await _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToListAsync());
             return View(_enrollmentService.ListOfEnrollment().ToList());
         }
 
         // GET: Enrollments/Details/5
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Details(int id)
         {
-            //if (id == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //var enrollment = await _context.Enrollments
-            //    .FirstOrDefaultAsync(m => m.ID == id);
-            //if (enrollment == null)
-            //{
-            //    return NotFound();
-            //}
-            //return View(enrollment);
+            
             var obj = _enrollmentService.GetEnrollmentDetails(id);
 
             if (obj == null)
@@ -72,6 +60,7 @@ namespace ERD.Controllers
 
 
         // GET: Enrollments/Create
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             var TypeDropDown = _context.Employees.ToList();
@@ -82,13 +71,11 @@ namespace ERD.Controllers
             ViewBag.TypeDropDown2 = TypeDropDown2;
             ViewBag.TypeDropDown3 = TypeDropDown3;
 
-            //TempData["EmployeeList"] = TypeDropDown;
-
             return View();
         }
 
         // POST: Enrollments/Create
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Enrollment enrollment)
@@ -125,96 +112,9 @@ namespace ERD.Controllers
             return View();
         }
 
-        //if (ModelState.IsValid)
-        //{
-        //    var enrollmentList=_context.Enrollments.Where(x=> x.EmployeeID==enrollment.EmployeeID).ToList();
-        //    foreach(var item in enrollmentList)
-        //    {
-        //        if(item.ActivityID==enrollment.ActivityID)
-        //        {
-        //            return RedirectToAction("Index");
-        //        }
-        //    }
-
-        //    var count = enrollmentList.Count();
-        //    if (count < 4)
-        //    {
-        //        _context.Add(enrollment);
-        //        _context.SaveChanges();
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    else
-
-        //        return RedirectToAction(nameof(Index));
-
-        //}
-        //return View(enrollment);
-
-        //TempData["ExistingActivity"] = "Employee already enrolled in this activity!";
-        //TempData["ExceedingActivity"] = "You cannot select more than 4 Activity";
-
-        //var exceptionHandlerPathFeature = HttpContext.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
-        //_logger.LogError($"The path {exceptionHandlerPathFeature.Path} " + $"threw an exception {exceptionHandlerPathFeature.Error}");
-        //return View("Error");
-
-
-        //try
-        //{
-
-        //if (ModelState.IsValid)
-        //{
-        //    var count = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID).Count();
-
-
-        //    if (count < 4)
-        //    {
-        //        //var count2 = _context.Enrollments.Where(x => x.EmployeeID == enrollment.EmployeeID && x.ActivityID == enrollment.ActivityID).Count();
-        //        //if (count2 == 0)
-        //        //{
-        //        try
-        //        {
-
-        //            _context.Enrollments.Add(enrollment);
-        //            _context.SaveChanges();
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        catch (DbUpdateException)
-        //        {
-        //            ViewBag.ExistingActivityError = "Employee already enrolled in this activity!";
-        //            _logger.LogInformation("CREATE POST - Duplicate Activity!");
-        //            //Message = $"About page visited at {DateTime.UtcNow.ToLongTimeString()}";
-        //            //_logger.LogInformation(ex.ToString());
-        //        }
-        //    }
-        //    else
-        //    {
-        //        ViewBag.ExceedingActivityError = "You cannot select more than 4 Activity";
-        //        _logger.LogInformation("CREATE POST - Exceeding Activity!");
-        //        //ViewBag.ExceedingActivity = TempData["ErrorMessage2"];
-
-        //    }
-        //else
-        //{
-
-
-        //    ViewBag.ExistingActivityError = "Employee already enrolled in this activity!";
-        //    //TempData["ExistingActivity"] = TempData["EmployeeList"];
-        //    //return View(enrollment);
-
-        //}
-        //}
-
-        //var TypeDropDown = _context.Employees.ToList();
-        //    var TypeDropDown2 = _context.Activitys.ToList();
-
-        //    ViewBag.TypeDropDown = TypeDropDown;
-        //    ViewBag.TypeDropDown2 = TypeDropDown2;
-
-        //    return View(enrollment);
-
-        //}
 
         // GET: Enrollments/Edit/5
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int id)
         {
             var obj = _enrollmentService.GetEnrollmentDetails(id);
@@ -230,38 +130,12 @@ namespace ERD.Controllers
         }
 
         // POST: Enrollments/Edit/5
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Enrollment enrollment)
         {
-            //if (id != enrollment.ID)
-            //{
-            //    return NotFound();
-            //}
-
-            //if (ModelState.IsValid)
-            //{
-            //    try
-            //    {
-            //        _context.Update(enrollment);
-            //        await _context.SaveChangesAsync();
-            //    }
-            //    catch (DbUpdateConcurrencyException)
-            //    {
-            //        if (!EnrollmentExists(enrollment.ID))
-            //        {
-            //            return NotFound();
-            //        }
-            //        else
-            //        {
-            //            throw;
-            //        }
-            //    }
-
-
-            //    return RedirectToAction(nameof(Index));
-            //}
+           
             var TypeDropDown = _context.Employees.ToList();
             var TypeDropDown2 = _context.Activitys.ToList();
             var TypeDropDown3 = _context.Teams.ToList();
@@ -276,40 +150,26 @@ namespace ERD.Controllers
                 ViewBag.Error = result;
             else if (result == "Max enrollment for team reached")
                 ViewBag.Error = result;
-            //TempData["SucessMessage"] = "Enrollment" + enrollment.ID + "Saved Successfully";
             return View(enrollment);
         }
 
         // GET: Enrollments/Delete/5
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
 
             var obj = _enrollmentService.GetEnrollmentDetails(id);
             return View(obj);
-            //if (id == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //var enrollment = await _context.Enrollments
-            //    .FirstOrDefaultAsync(m => m.ID == id);
-            //if (enrollment == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //return View(enrollment);
+            
         }
 
         // POST: Enrollments/Delete/5
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            //var enrollment = await _context.Enrollments.FindAsync(id);
-            //_context.Enrollments.Remove(enrollment);
-            //await _context.SaveChangesAsync();
-            //return RedirectToAction(nameof(Index));
+           
             var result = _enrollmentService.DeleteAnEnrollment(_enrollmentService.GetEnrollmentDetails(id));
             return RedirectToAction(nameof(Index));
         }
@@ -317,6 +177,7 @@ namespace ERD.Controllers
             {
                 return _context.Enrollments.Any(e => e.ID == id);
             }
+
 
         [HttpPost]
         public async Task<JsonResult> CallResult(int id)

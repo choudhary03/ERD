@@ -26,36 +26,35 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                       @if (SignInManager.IsSignedIn(User))
+                        @if (SignInManager.IsSignedIn(User))
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
+                            </li>
 
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Activities" asp-action="Index">Activities On Board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Teams" asp-action="Index">Teams</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enrollments</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Bookings" asp-action="Index">Booked Matches</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Venues" asp-action="Index"> Venues</a>
+                            </li>
                             @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
                             {
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Activities" asp-action="Index">Activities On Board</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Teams" asp-action="Index">Team Formation</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enrollment</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Bookings" asp-action="Index">Book Match</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Venues" asp-action="Index">Choose Venue</a>
-                                </li>
                                 <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Role" asp-action="ListOfRoles">Manage Roles</a>
                                 </li>
@@ -65,7 +64,7 @@
                             }
                         }
                     </ul>
-                    <partial name ="_LoginPartial" />
+                    <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
@@ -74,35 +73,9 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/15/bootstrap-multiselect.is"></script>
-    
+
     <div class="container">
         <main role="main" class="pb-3">
-
-            @*    <!--Success Dialog Start-->
-                <div id="myModalSuccess" class="modal fade text-width:30%;" role="dialog">
-                <div class="modal-dialog">
-                <div class="modal-content">
-
-                <div class="modal-header">
-                <h2>Information</h2>
-                <button type="button" class="close" data-dismiss="modal">&times; </button>
-                </div>
-
-                <div id="MyModalSuccessAlertBody" class="modal-body alert alert-success">
-                this is a modal body.
-                </div>
-
-                <div class="modal-footer">
-                &nbsp;
-                <button type="button" class="btn btn-info" data-dismiss="modal" >Close</button>
-                </div>
-
-                </div>
-                </div>
-                </div>
-
-                <!--Success Dialog End-->*@
-
 
             @RenderBody()
         </main>
@@ -113,8 +86,8 @@
             &copy; 2022 - ERD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    
-    
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

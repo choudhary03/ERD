@@ -14,6 +14,5 @@ namespace Refreshment_Dashboard.Models
         [Required(ErrorMessage = "Required*")] 
         public string Name { get; set; }
 
-        //public int MaxLimit { get; set; }
     }
 }

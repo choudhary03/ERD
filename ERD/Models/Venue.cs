@@ -17,7 +17,5 @@ namespace Refreshment_Dashboard.Models
         [ForeignKey("ActivityID")]
         public virtual Activity Activity { get; set; }
 
-        //[Required(ErrorMessage = "Required*")]
-        //public int MaxLimit { get; set; }
     }
 }

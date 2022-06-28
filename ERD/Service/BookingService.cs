@@ -62,22 +62,6 @@ namespace ERD.Service
         {
             try
             {
-                //var emp = _context.Bookings.Where(x => x.ID == bookings.ID).FirstOrDefault();
-                //if (emp != null)
-                //{
-                //    //Booking ServicesBooking = new Booking();
-                //    //ServicesBooking.ID = bookings.ID;
-                //    emp.BookedOn = bookings.BookedOn;
-                //    emp.VenueID = bookings.VenueID;
-                //    emp.ActivityID = bookings.ActivityID;
-
-                //    _context.SaveChanges();
-                //    return true;
-                //}
-                //else
-                //{
-                //    return false;
-                //}
                 var currentBooking = GetBookingDetails(id);
 
                 currentBooking.ID = bookings.ID;

@@ -14,7 +14,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
-    [Authorize(Roles = "SuperAdmin")]
+    [Authorize]
     public class VenuesController : Controller
     {
         //private readonly ERDContext _context;
@@ -37,7 +37,7 @@ namespace ERD.Controllers
             return View(_venueService.ListOfVenues().ToList());
         }
 
-
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Details(int id)
         {
             var obj = _venueService.GetVenueDetails(id);
@@ -51,7 +51,7 @@ namespace ERD.Controllers
         }
 
 
-
+        [Authorize(Roles = "SuperAdmin")]
         public IActionResult Create()
         {
             var TypeDropDown = _activitiesService.ListOfActivities().ToList();
@@ -63,7 +63,7 @@ namespace ERD.Controllers
 
 
 
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Venue venue)
@@ -91,7 +91,7 @@ namespace ERD.Controllers
             return View();
         }
 
-
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Edit(int id)
         {
             var obj = _venueService.GetVenueDetails(id);
@@ -102,36 +102,11 @@ namespace ERD.Controllers
             return View(obj);
         }
 
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost]
-        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, Venue venue)
         {
-            //if (id != venue.ID)
-            //{
-            //    return NotFound();
-            //}
-
-            //if (ModelState.IsValid)
-            //{
-            //    try
-            //    {
-            //        _context.Update(venue);
-            //        await _context.SaveChangesAsync();
-            //    }
-            //    catch (DbUpdateConcurrencyException)
-            //    {
-            //        if (!VenueExists(venue.ID))
-            //        {
-            //            return NotFound();
-            //        }
-            //        else
-            //        {
-            //            throw;
-            //        }
-            //    }
-            //    return RedirectToAction(nameof(Index));
-            //}
+            
             var TypeDropDown = _activitiesService.ListOfActivities().ToList();
 
             ViewBag.TypeDropDown = TypeDropDown;
@@ -145,14 +120,14 @@ namespace ERD.Controllers
             
         }
 
-
+        [Authorize(Roles = "SuperAdmin")]
         public async Task<IActionResult> Delete(int id)
         {
             var obj = _venueService.GetVenueDetails(id);
             return View(obj);
         }
 
-
+        [Authorize(Roles = "SuperAdmin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

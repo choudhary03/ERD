@@ -1,4 +1,8 @@
-﻿@model IEnumerable<Refreshment_Dashboard.Models.Booking>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model IEnumerable<Refreshment_Dashboard.Models.Booking>
 
 @{
     ViewData["Title"] = "Index";
@@ -7,9 +11,12 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
 <table class="table">
     <thead>
         <tr>
@@ -18,7 +25,10 @@
                 <th>Activity</th>
                 <th>BookedOn</th>
                 <th>MatchFix</th>
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
                 <th>Action</th>
+}
         </tr>
     </thead>
     <tbody>
@@ -29,11 +39,14 @@
             <td>@item.Activity.Name</td>
             <td>@item.BookedOn</td>
             <td>@item.MatchFix</td>
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
             <td>
                 <a asp-controller="Bookings" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-controller="Bookings" asp-action="Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
+}
         </tr>
 }
     </tbody>
