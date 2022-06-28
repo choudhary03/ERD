@@ -9,9 +9,11 @@ using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 using ERD.ViewModels;
 using ERD.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class EmployeesController : Controller
     {
         private readonly ERDContext _context;
@@ -174,5 +176,12 @@ namespace ERD.Controllers
         //{
         //    return _context.Employees.Any(e => e.ID == id);
         //}
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }

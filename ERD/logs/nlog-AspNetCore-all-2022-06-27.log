@@ -1,0 +1,643 @@
+2022-06-27 10:24:20.4524|0|DEBUG|Program|init main 
+2022-06-27 10:24:27.9982|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 10:24:28.0780|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 10:24:28.0991|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 10:24:28.0991|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 10:24:31.3337|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 10:29:08.7139|0|DEBUG|Program|init main 
+2022-06-27 10:29:13.1300|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 10:29:13.1927|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 10:29:13.1927|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 10:29:13.1927|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 10:29:15.8470|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 10:30:34.0772|0|DEBUG|Program|init main 
+2022-06-27 10:30:36.4273|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 10:30:36.4634|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 10:30:36.4634|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 10:30:36.4634|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 10:30:37.7282|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 10:39:32.4891|0|DEBUG|Program|init main 
+2022-06-27 10:39:36.0615|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 10:39:36.1096|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 10:39:36.1134|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 10:39:36.1134|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 10:39:38.4251|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 10:40:26.1639|0|DEBUG|Program|init main 
+2022-06-27 10:40:29.4831|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 10:40:29.5264|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 10:40:29.5264|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 10:40:29.5334|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 10:40:31.3022|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:06:09.9592|0|DEBUG|Program|init main 
+2022-06-27 11:06:15.8973|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:06:15.9443|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:06:15.9443|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:06:15.9443|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:06:18.1170|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:21:03.7629|0|DEBUG|Program|init main 
+2022-06-27 11:21:07.2628|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:21:07.3147|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:21:07.3192|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:21:07.3192|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:21:09.7444|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:27:13.2367|0|DEBUG|Program|init main 
+2022-06-27 11:27:17.4154|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:27:17.4718|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:27:17.4718|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:27:17.4877|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:27:20.4750|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:36:35.4902|0|DEBUG|Program|init main 
+2022-06-27 11:36:42.1084|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:36:42.1552|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:36:42.1552|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:36:42.1614|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:36:45.0841|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:40:56.8288|0|DEBUG|Program|init main 
+2022-06-27 11:40:59.9400|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:40:59.9883|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:40:59.9883|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:40:59.9883|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:41:02.0457|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:41:40.6441|0|DEBUG|Program|init main 
+2022-06-27 11:41:43.8388|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:41:43.8852|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:41:43.8852|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:41:43.8852|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:41:46.0615|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:43:50.5296|0|DEBUG|Program|init main 
+2022-06-27 11:43:54.7542|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:43:54.8196|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:43:54.8196|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:43:54.8472|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:43:58.1461|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:48:02.2634|0|DEBUG|Program|init main 
+2022-06-27 11:48:05.8493|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:48:05.9056|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:48:05.9114|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:48:05.9114|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:48:08.2858|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:50:29.3760|0|DEBUG|Program|init main 
+2022-06-27 11:50:33.1544|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:50:33.2364|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:50:33.2451|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:50:33.2535|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:50:36.6630|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:51:32.4122|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 11:51:32.4679|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 11:51:54.8976|0|DEBUG|Program|init main 
+2022-06-27 11:51:59.2462|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:51:59.3091|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:51:59.3091|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:51:59.3194|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:52:02.2887|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:52:03.8696|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 11:52:16.0216|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 11:53:21.6634|0|DEBUG|Program|init main 
+2022-06-27 11:53:26.0553|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 11:53:26.0943|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 11:53:26.0989|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 11:53:26.0989|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 11:53:27.9444|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 11:53:43.3377|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 11:53:43.4250|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 11:54:11.4041|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 11:54:22.0695|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 11:55:14.6521|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 12:19:32.4594|0|DEBUG|Program|init main 
+2022-06-27 12:19:36.3292|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 12:19:36.3805|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 12:19:36.3805|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 12:19:36.3805|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 12:19:38.7395|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 12:19:56.3015|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 12:19:56.3648|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 12:20:02.1231|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 12:21:04.5422|0|DEBUG|Program|init main 
+2022-06-27 12:21:09.3792|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 12:21:09.4270|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 12:21:09.4270|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 12:21:09.4270|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 12:21:11.4802|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 12:21:12.1827|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 12:24:07.8146|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 12:24:25.9386|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 13:38:14.3536|0|DEBUG|Program|init main 
+2022-06-27 13:38:18.0791|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:38:18.1334|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:38:18.1334|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:38:18.1334|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:38:20.2205|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:39:09.3631|0|DEBUG|Program|init main 
+2022-06-27 13:39:13.9962|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:39:14.0496|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:39:14.0496|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:39:14.0496|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:39:15.9862|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:39:50.1945|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 13:41:22.1223|0|DEBUG|Program|init main 
+2022-06-27 13:41:25.2939|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:41:25.3486|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:41:25.3486|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:41:25.3486|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:41:27.5624|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:42:29.0483|0|DEBUG|Program|init main 
+2022-06-27 13:42:35.7444|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:42:35.8164|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:42:35.8164|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:42:35.8342|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:42:39.3571|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:42:58.3643|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 13:42:58.4135|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 13:43:02.4543|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 13:43:11.1725|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 13:43:48.5302|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 13:45:44.6944|0|DEBUG|Program|init main 
+2022-06-27 13:45:51.7850|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:45:51.8323|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:45:51.8323|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:45:51.8323|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:45:53.5298|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:46:09.4565|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 13:46:09.5206|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 13:46:22.1602|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 13:46:27.3372|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 13:48:08.6166|0|DEBUG|Program|init main 
+2022-06-27 13:48:12.1654|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:48:12.2159|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:48:12.2159|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:48:12.2242|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:48:14.0235|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:48:15.0089|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 13:48:22.2753|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 13:51:58.9599|0|DEBUG|Program|init main 
+2022-06-27 13:52:04.9284|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 13:52:04.9986|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 13:52:05.0192|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 13:52:05.0192|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 13:52:07.6538|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 13:52:08.6327|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 13:52:20.3489|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 14:22:45.5123|0|DEBUG|Program|init main 
+2022-06-27 14:22:49.8622|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 14:22:49.9276|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 14:22:49.9276|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 14:22:49.9276|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 14:22:54.3268|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 14:23:00.4656|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 14:23:06.5451|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 14:23:23.7686|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 14:23:23.8117|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 14:23:58.1228|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 14:23:59.5416|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:01.5114|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:04.1438|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:20.9199|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:22.4246|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:33.0207|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:35.6856|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:37.2546|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 14:24:40.8166|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 14:24:42.8648|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 14:24:44.3281|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 14:24:46.7067|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 14:24:47.8201|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 14:24:49.1571|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 14:24:51.6522|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 14:24:53.2018|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 14:25:01.4526|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 14:25:11.5235|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 14:58:22.9549|0|DEBUG|Program|init main 
+2022-06-27 14:58:26.5745|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 14:58:26.6404|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 14:58:26.6441|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 14:58:26.6441|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 14:58:28.8002|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 15:00:29.1509|0|DEBUG|Program|init main 
+2022-06-27 15:00:33.9227|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 15:00:33.9755|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 15:00:33.9755|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 15:00:33.9755|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 15:00:36.5845|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 15:01:16.7386|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 15:01:16.8043|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 15:01:35.6418|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 15:01:51.1455|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 15:01:54.4050|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 15:02:03.4448|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 15:02:04.6302|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 15:02:17.6265|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 15:13:38.2679|0|DEBUG|Program|init main 
+2022-06-27 15:13:42.6837|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 15:13:42.7634|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 15:13:42.8704|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 15:13:43.2154|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 15:13:45.5422|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 15:13:46.3344|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 15:13:51.8328|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 15:21:58.5932|0|DEBUG|Program|init main 
+2022-06-27 15:22:03.3035|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 15:22:03.3671|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 15:22:03.3671|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 15:22:03.3821|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 15:22:06.0882|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 15:22:07.0423|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 16:01:28.9107|0|DEBUG|Program|init main 
+2022-06-27 16:01:32.6147|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 16:01:32.6633|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 16:01:32.6633|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 16:01:32.6633|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 16:01:35.0988|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 16:01:45.3812|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 16:01:49.3837|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 16:02:02.4584|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 16:02:02.5000|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 16:04:46.6778|0|DEBUG|Program|init main 
+2022-06-27 16:04:51.0408|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 16:04:51.1056|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 16:04:51.1056|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 16:04:51.1169|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 16:04:55.1770|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 16:04:57.1021|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 16:05:51.6323|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 16:56:27.8979|0|DEBUG|Program|init main 
+2022-06-27 16:56:29.9237|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 16:56:29.9478|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 16:56:29.9478|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 16:56:29.9478|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 16:56:31.7316|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 16:56:54.8405|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 16:57:03.3641|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 16:57:03.4182|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 16:57:30.5990|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 16:57:33.5291|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:06:02.5478|0|DEBUG|Program|init main 
+2022-06-27 17:06:06.0232|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 17:06:06.0712|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 17:06:06.0712|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 17:06:06.0712|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 17:06:07.7271|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 17:06:08.5482|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 17:06:16.8827|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:06:19.4689|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:06:49.6000|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 73
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 38
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-27 17:07:02.7043|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:07:04.5893|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:07:06.5371|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:07:10.8581|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:07:13.0441|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:07:30.9585|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-27 17:07:32.1646|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-27 17:07:33.6569|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-27 17:07:35.2473|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-27 17:07:36.7047|1|DEBUG|ERD.Controllers.TeamsController|NLog injected into Teams Controller 
+2022-06-27 17:07:44.2212|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 17:07:46.2135|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 17:07:48.2205|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 17:07:49.4428|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 17:07:50.9531|1|DEBUG|ERD.Controllers.BookingsController|NLog injected into Bookings Controller 
+2022-06-27 17:07:53.9507|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:07:55.4175|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:07:56.6965|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:07:57.5736|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:07:58.8483|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:07:59.8056|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:08:01.1155|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:08:05.6045|1|DEBUG|ERD.Controllers.VenuesController|NLog injected into Venues Controller 
+2022-06-27 17:08:08.0474|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:08:26.4343|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:08:27.7478|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 17:10:51.3223|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 73
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 38
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-27 18:48:07.0031|0|DEBUG|Program|init main 
+2022-06-27 18:48:13.8628|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 18:48:13.9497|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 18:48:13.9562|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 18:48:13.9562|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 18:48:17.2442|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 18:48:28.0994|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 18:48:34.5390|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 18:48:45.1005|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 75
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 73
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 38
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-27 18:53:04.9508|0|DEBUG|Program|init main 
+2022-06-27 18:53:08.7952|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 18:53:08.8453|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 18:53:08.8497|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 18:53:08.8497|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 18:53:10.8529|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 18:53:11.5742|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 18:53:41.0540|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:27:20.1476|0|DEBUG|Program|init main 
+2022-06-27 19:27:24.4243|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:27:24.4690|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:27:24.4712|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:27:24.4712|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:27:26.5341|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:27:33.7014|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:27:38.1705|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:27:39.9566|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:27:41.7367|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:27:43.0216|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:29:36.2911|0|DEBUG|Program|init main 
+2022-06-27 19:29:39.9492|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:29:40.0403|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:29:40.0403|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:29:40.0403|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:29:41.8278|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:29:44.1816|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:29:52.4904|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:29:54.6393|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Refreshment_Dashboard.Models.Employee' does not contain a definition for 'Name'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_1.<<ExecuteAsync>b__9>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 73
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 38
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-27 19:29:55.2796|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:29:56.3279|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Refreshment_Dashboard.Models.Employee' does not contain a definition for 'Name'
+   at CallSite.Target(Closure , CallSite , Object )
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_1.<<ExecuteAsync>b__9>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 73
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 38
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-27 19:31:16.5807|0|DEBUG|Program|init main 
+2022-06-27 19:31:24.5813|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:31:24.6603|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:31:24.6603|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:31:24.6603|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:31:27.3685|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:31:28.7584|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:31:40.8623|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:31:43.2485|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:32:25.0863|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Refreshment_Dashboard.Models.Employee' does not contain a definition for 'Name'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_1.<<ExecuteAsync>b__9>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__2>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 77
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.<>c__DisplayClass13_0.<<ExecuteAsync>b__0>d.MoveNext() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 73
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Enrollments_Edit.ExecuteAsync() in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Views\Enrollments\Edit.cshtml:line 38
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-27 19:35:20.5707|0|DEBUG|Program|init main 
+2022-06-27 19:35:25.0289|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:35:25.0892|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:35:25.0892|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:35:25.0892|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:35:27.2994|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:35:28.3384|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:35:38.2006|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:35:40.6097|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:36:12.8646|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:36:15.7529|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:36:37.4820|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 19:36:45.7268|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 19:36:55.6929|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 19:37:05.1581|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 19:37:37.9007|0|DEBUG|Program|init main 
+2022-06-27 19:37:41.5372|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:37:41.5859|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:37:41.5859|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:37:41.5973|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:37:43.8199|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:38:01.9559|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 19:38:02.0107|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:56:46.4696|0|DEBUG|Program|init main 
+2022-06-27 19:56:50.2123|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:56:50.2900|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:56:50.2900|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:56:50.2900|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:56:52.2909|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:56:53.2161|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:57:36.3051|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-27 19:57:46.7911|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-27 19:57:46.8329|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:59:20.9865|0|DEBUG|Program|init main 
+2022-06-27 19:59:23.3729|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 19:59:23.4361|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 19:59:23.4411|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 19:59:23.4411|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 19:59:25.3068|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 19:59:26.7905|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 19:59:53.3014|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 20:02:10.5824|0|DEBUG|Program|init main 
+2022-06-27 20:02:14.4533|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 20:02:14.5260|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 20:02:14.5335|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 20:02:14.5756|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 20:02:16.3538|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 20:02:17.3993|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 20:12:10.9640|0|DEBUG|Program|init main 
+2022-06-27 20:12:13.5844|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 20:12:13.6140|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 20:12:13.6140|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 20:12:13.6140|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 20:12:14.9068|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 20:12:15.4738|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-27 20:13:44.2258|1|DEBUG|ERD.Controllers.EnrollmentsController|NLog injected Enrollments Controller 
+2022-06-27 23:32:25.4182|0|DEBUG|Program|init main 
+2022-06-27 23:32:26.8693|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-27 23:32:26.8934|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-27 23:32:26.8934|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-27 23:32:26.8934|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-27 23:32:27.7001|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-27 23:32:31.9493|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 

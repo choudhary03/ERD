@@ -26,9 +26,13 @@
 {
     <Center><h1>Employee Enrollment Details</h1></Center>
 
+    @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+{
     <p>
         <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enroll An Employee</a>
     </p>
+}
+
     <table class="table">
         <thead>
             <tr>
@@ -75,7 +79,7 @@
 else
 {
     <li class="nav-item">
-        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
-    </li>
-
+        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-route = asp-page="/Account/Login">Login</a>
+    
+    </li>    
 }

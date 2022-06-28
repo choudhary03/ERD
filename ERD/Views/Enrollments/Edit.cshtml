@@ -33,7 +33,7 @@
 
 @{
     ViewData["Title"] = "Edit";
-    var employeeListItem = ViewBag.TypeDropDown1;
+    var employeeListItem = ViewBag.TypeDropDown;
     var activityListItem = ViewBag.TypeDropDown2;
     var teamListItem = ViewBag.TypeDropDown3;
 }
@@ -74,7 +74,7 @@
            <option selected>--Employee--</option>
             @foreach (var item in employeeListItem)
                     {
-                        <option value="@item.ID">@item.Name</option>
+                        <option value="@item.ID">@item.Firstname</option>
                     }
        </select>
     <br />

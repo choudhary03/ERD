@@ -10,9 +10,11 @@ using ERD.Models;
 using Microsoft.Extensions.Logging;
 using ERD.Services;
 using ERD.Service;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class BookingsController : Controller
     {
         private readonly ILogger<BookingsController> _logger;
@@ -136,5 +138,11 @@ namespace ERD.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }

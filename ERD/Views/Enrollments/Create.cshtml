@@ -25,13 +25,21 @@
 
 <form method="post">
 
-    <select asp-for="EmployeeID" multiple="multiple">
+  @*  <select asp-for="EmployeeID" multiple="multiple">
         <option selected>--Choose Employee--</option>
         @foreach (var item in employeeListDetails)
         {
             <option value="@item.ID">@item.Firstname </option>
         }
-    </select>
+    </select>*@
+
+     <select asp-for ="EmployeeID">
+           <option selected>--Choose Employee--</option>
+           @foreach (var item in  employeeListDetails)
+                    {
+                        <option value="@item.ID">@item.Firstname</option>
+                    }
+       </select>
 
    @*  <div>
           Select Employees 

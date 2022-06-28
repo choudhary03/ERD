@@ -10,10 +10,11 @@ using Refreshment_Dashboard.Models;
 using Microsoft.Extensions.Logging;
 using ERD.Services;
 using ERD.Models;
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize (Roles = "SuperAdmin")]
     public class EnrollmentsController : Controller
     {
         private readonly ILogger<EnrollmentsController> _logger;
@@ -324,6 +325,13 @@ namespace ERD.Controllers
             var teamDropDownItems = teamList.Select(x => new SelectListItem { Value = x.ID.ToString(), Text = x.Name }).ToList();
             var returnValue = Json(teamDropDownItems);
             return Json(teamDropDownItems);
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
     }

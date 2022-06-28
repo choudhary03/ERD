@@ -1,0 +1,42 @@
+2022-06-28 09:17:59.5281|0|DEBUG|Program|init main 
+2022-06-28 09:18:02.8706|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 09:18:02.9223|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 09:18:02.9273|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 09:18:02.9273|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 09:18:09.4030|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 09:18:14.4783|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 09:19:10.5787|0|INFO|ERD.Areas.Identity.Pages.Account.LogoutModel|User logged out. 
+2022-06-28 09:19:18.9397|0|INFO|ERD.Areas.Identity.Pages.Account.LoginModel|User logged in. 
+2022-06-28 09:19:18.9706|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 09:19:48.5773|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.NullReferenceException: Object reference not set to an instance of an object.
+   at ERD.Controllers.ErrorController.HttpStatusCodeHandler(Int32 statusCode) in C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\Controllers\ErrorController.cs:line 34
+   at lambda_method308(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-06-28 09:21:48.5027|0|DEBUG|Program|init main 
+2022-06-28 09:21:51.9890|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 
+2022-06-28 09:21:52.0328|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2022-06-28 09:21:52.0365|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2022-06-28 09:21:52.0365|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ 
+2022-06-28 09:21:53.5966|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2022-06-28 09:21:54.5441|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 
+2022-06-28 09:22:15.7963|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController 

@@ -10,9 +10,11 @@ using Refreshment_Dashboard.Models;
 using ERD.ViewModels;
 using ERD.Services;
 using ERD.Service;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class VenuesController : Controller
     {
         //private readonly ERDContext _context;
@@ -157,6 +159,13 @@ namespace ERD.Controllers
         {
             var result = _venueService.DeleteVenue(_venueService.GetVenueDetails(id));
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

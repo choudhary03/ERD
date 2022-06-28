@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using ERD;
 using ERD.Service;
 using ERD.Automapper;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
@@ -55,6 +56,9 @@ builder.Services.AddScoped<EnrollmentService>();
 builder.Services.AddScoped<TeamsService>();
 builder.Services.AddScoped<VenueService>();
 builder.Services.AddScoped<BookingService>();
+//builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options => { options.LoginPath = "/Identity/Account/Login"; });
+builder.Services.ConfigureApplicationCookie(options => { options.LoginPath = "/Identity/Account/Login"; });
+builder.Services.ConfigureApplicationCookie(options => { options.AccessDeniedPath = "/Identity/Account/AccessDenied"; });
 
 var app = builder.Build();
 
@@ -63,7 +67,7 @@ var app = builder.Build();
 //if (!app.Environment.IsDevelopment())
 //{
 //    app.UseExceptionHandler("/Home/Error");
-   
+
 //}
 //else
 //{
@@ -75,11 +79,23 @@ var app = builder.Build();
 //    });
 //}
 
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+
+}
+else
+{
+    {
+        app.UseStatusCodePagesWithRedirects("/Error/{0}");
+    }
+}
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
+app.UseAuthentication(); ;
 
 app.UseAuthorization();
 app.MapRazorPages();

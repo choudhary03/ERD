@@ -9,9 +9,11 @@ using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 using ERD.ViewModels;
 using ERD.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class TeamsController : Controller
     {
         private readonly ILogger<TeamsController> _logger;
@@ -124,6 +126,13 @@ namespace ERD.Controllers
         {
             var result = _teamService.DeleteTeam(_teamService.GetTeamDetails(id));
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

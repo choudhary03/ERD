@@ -10,9 +10,11 @@ using ERD.Services;
 using ERD.Models;
 using Microsoft.AspNetCore.Identity;
 using ERD.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class Role : Controller
     {
         //private readonly ERDContext _context;
@@ -266,6 +268,12 @@ namespace ERD.Controllers
             }
 
             return RedirectToAction("EditRole", new { Id = roleId });
+        }
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
         }
     }
 }

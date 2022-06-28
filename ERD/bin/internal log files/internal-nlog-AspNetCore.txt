@@ -1514,3 +1514,291 @@
 2022-06-24 11:48:38.7504 Info Adding target FileTarget(Name=ownFile-web)
 2022-06-24 11:48:38.7504 Info Adding target ConsoleTarget(Name=lifetimeConsole)
 2022-06-24 11:48:38.8755 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 10:24:20.1049 Info Message Template Auto Format enabled
+2022-06-27 10:24:20.1339 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 10:24:20.2762 Info Adding target FileTarget(Name=allfile)
+2022-06-27 10:24:20.2762 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 10:24:20.2840 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 10:24:20.3644 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 10:29:07.6740 Info Message Template Auto Format enabled
+2022-06-27 10:29:07.8571 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 10:29:08.2802 Info Adding target FileTarget(Name=allfile)
+2022-06-27 10:29:08.3127 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 10:29:08.3634 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 10:29:08.5561 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 10:30:33.7511 Info Message Template Auto Format enabled
+2022-06-27 10:30:33.7739 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 10:30:33.9196 Info Adding target FileTarget(Name=allfile)
+2022-06-27 10:30:33.9242 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 10:30:33.9242 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 10:30:33.9929 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 10:39:31.9476 Info Message Template Auto Format enabled
+2022-06-27 10:39:31.9772 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 10:39:32.1670 Info Adding target FileTarget(Name=allfile)
+2022-06-27 10:39:32.1670 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 10:39:32.1770 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 10:39:32.3419 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 10:40:25.8558 Info Message Template Auto Format enabled
+2022-06-27 10:40:25.8784 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 10:40:26.0042 Info Adding target FileTarget(Name=allfile)
+2022-06-27 10:40:26.0042 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 10:40:26.0042 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 10:40:26.0812 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:06:08.9791 Info Message Template Auto Format enabled
+2022-06-27 11:06:09.1433 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:06:09.5326 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:06:09.5393 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:06:09.5393 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:06:09.6058 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:21:03.3124 Info Message Template Auto Format enabled
+2022-06-27 11:21:03.3537 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:21:03.5534 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:21:03.5534 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:21:03.5652 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:21:03.6440 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:27:12.5459 Info Message Template Auto Format enabled
+2022-06-27 11:27:12.5897 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:27:12.8367 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:27:12.8367 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:27:12.8475 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:27:12.9717 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:36:31.6250 Info Message Template Auto Format enabled
+2022-06-27 11:36:31.6906 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:36:32.7212 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:36:32.7660 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:36:32.7922 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:36:33.1620 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:40:56.4682 Info Message Template Auto Format enabled
+2022-06-27 11:40:56.4877 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:40:56.6475 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:40:56.6475 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:40:56.6475 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:40:56.7326 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:41:40.1893 Info Message Template Auto Format enabled
+2022-06-27 11:41:40.2190 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:41:40.3898 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:41:40.4020 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:41:40.4099 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:41:40.5073 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:43:49.9424 Info Message Template Auto Format enabled
+2022-06-27 11:43:49.9774 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:43:50.2377 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:43:50.2377 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:43:50.2377 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:43:50.3710 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:48:01.6385 Info Message Template Auto Format enabled
+2022-06-27 11:48:01.6856 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:48:01.8567 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:48:01.8622 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:48:01.8622 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:48:02.0125 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:50:28.8855 Info Message Template Auto Format enabled
+2022-06-27 11:50:28.9250 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:50:29.1066 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:50:29.1066 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:50:29.1168 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:50:29.2468 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:51:54.0660 Info Message Template Auto Format enabled
+2022-06-27 11:51:54.1433 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:51:54.5245 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:51:54.6103 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:51:54.6292 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:51:54.7323 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 11:53:21.0366 Info Message Template Auto Format enabled
+2022-06-27 11:53:21.0518 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 11:53:21.2194 Info Adding target FileTarget(Name=allfile)
+2022-06-27 11:53:21.4460 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 11:53:21.4460 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 11:53:21.5745 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 12:19:31.9705 Info Message Template Auto Format enabled
+2022-06-27 12:19:32.0064 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 12:19:32.1994 Info Adding target FileTarget(Name=allfile)
+2022-06-27 12:19:32.2146 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 12:19:32.2208 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 12:19:32.3212 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 12:21:03.6092 Info Message Template Auto Format enabled
+2022-06-27 12:21:03.6444 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 12:21:03.9812 Info Adding target FileTarget(Name=allfile)
+2022-06-27 12:21:04.0453 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 12:21:04.0617 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 12:21:04.2791 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:38:13.8462 Info Message Template Auto Format enabled
+2022-06-27 13:38:13.8910 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:38:14.0927 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:38:14.1017 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:38:14.1017 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:38:14.2214 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:39:09.0367 Info Message Template Auto Format enabled
+2022-06-27 13:39:09.0719 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:39:09.2045 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:39:09.2083 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:39:09.2083 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:39:09.2805 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:41:21.6782 Info Message Template Auto Format enabled
+2022-06-27 13:41:21.7102 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:41:21.8813 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:41:21.8813 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:41:21.8813 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:41:21.9975 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:42:28.5110 Info Message Template Auto Format enabled
+2022-06-27 13:42:28.5457 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:42:28.7508 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:42:28.7657 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:42:28.7800 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:42:28.9247 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:45:44.3966 Info Message Template Auto Format enabled
+2022-06-27 13:45:44.4197 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:45:44.5568 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:45:44.5568 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:45:44.5568 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:45:44.6160 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:48:08.1968 Info Message Template Auto Format enabled
+2022-06-27 13:48:08.2231 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:48:08.4084 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:48:08.4180 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:48:08.4180 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:48:08.5100 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 13:51:58.1178 Info Message Template Auto Format enabled
+2022-06-27 13:51:58.1561 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 13:51:58.4706 Info Adding target FileTarget(Name=allfile)
+2022-06-27 13:51:58.4787 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 13:51:58.5176 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 13:51:58.7181 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 14:22:44.9039 Info Message Template Auto Format enabled
+2022-06-27 14:22:44.9681 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 14:22:45.2650 Info Adding target FileTarget(Name=allfile)
+2022-06-27 14:22:45.2773 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 14:22:45.2773 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 14:22:45.3928 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 14:58:21.9831 Info Message Template Auto Format enabled
+2022-06-27 14:58:22.0793 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 14:58:22.6571 Info Adding target FileTarget(Name=allfile)
+2022-06-27 14:58:22.6770 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 14:58:22.7113 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 14:58:22.8170 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 15:00:28.6810 Info Message Template Auto Format enabled
+2022-06-27 15:00:28.7192 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 15:00:28.9653 Info Adding target FileTarget(Name=allfile)
+2022-06-27 15:00:28.9723 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 15:00:28.9723 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 15:00:29.0487 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 15:13:37.8443 Info Message Template Auto Format enabled
+2022-06-27 15:13:37.8674 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 15:13:37.9869 Info Adding target FileTarget(Name=allfile)
+2022-06-27 15:13:37.9869 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 15:13:37.9869 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 15:13:38.1180 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 15:21:58.2478 Info Message Template Auto Format enabled
+2022-06-27 15:21:58.2656 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 15:21:58.4150 Info Adding target FileTarget(Name=allfile)
+2022-06-27 15:21:58.4150 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 15:21:58.4150 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 15:21:58.5013 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 16:01:28.3897 Info Message Template Auto Format enabled
+2022-06-27 16:01:28.4431 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 16:01:28.6302 Info Adding target FileTarget(Name=allfile)
+2022-06-27 16:01:28.6302 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 16:01:28.6302 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 16:01:28.7249 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 16:04:45.7983 Info Message Template Auto Format enabled
+2022-06-27 16:04:45.8387 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 16:04:46.1079 Info Adding target FileTarget(Name=allfile)
+2022-06-27 16:04:46.1178 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 16:04:46.1542 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 16:04:46.3287 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 16:56:27.6586 Info Message Template Auto Format enabled
+2022-06-27 16:56:27.6794 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 16:56:27.7719 Info Adding target FileTarget(Name=allfile)
+2022-06-27 16:56:27.7719 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 16:56:27.7719 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 16:56:27.8298 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 17:06:01.9548 Info Message Template Auto Format enabled
+2022-06-27 17:06:02.0916 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 17:06:02.3337 Info Adding target FileTarget(Name=allfile)
+2022-06-27 17:06:02.3337 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 17:06:02.3526 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 17:06:02.4381 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 18:48:06.5778 Info Message Template Auto Format enabled
+2022-06-27 18:48:06.6265 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 18:48:06.8222 Info Adding target FileTarget(Name=allfile)
+2022-06-27 18:48:06.8314 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 18:48:06.8314 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 18:48:06.9042 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 18:53:04.2282 Info Message Template Auto Format enabled
+2022-06-27 18:53:04.3157 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 18:53:04.6237 Info Adding target FileTarget(Name=allfile)
+2022-06-27 18:53:04.6490 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 18:53:04.6490 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 18:53:04.8118 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:27:18.7906 Info Message Template Auto Format enabled
+2022-06-27 19:27:18.8359 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:27:19.6394 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:27:19.6550 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:27:19.6848 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:27:19.9237 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:29:35.8342 Info Message Template Auto Format enabled
+2022-06-27 19:29:35.8713 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:29:36.1004 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:29:36.1004 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:29:36.1162 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:29:36.1982 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:31:16.1078 Info Message Template Auto Format enabled
+2022-06-27 19:31:16.1331 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:31:16.3720 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:31:16.3816 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:31:16.3816 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:31:16.4731 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:35:19.5381 Info Message Template Auto Format enabled
+2022-06-27 19:35:19.6636 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:35:20.0948 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:35:20.1067 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:35:20.1701 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:35:20.3170 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:37:37.4075 Info Message Template Auto Format enabled
+2022-06-27 19:37:37.4467 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:37:37.7163 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:37:37.7219 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:37:37.7219 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:37:37.8180 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:56:45.6004 Info Message Template Auto Format enabled
+2022-06-27 19:56:45.6713 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:56:45.9429 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:56:46.0838 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:56:46.0838 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:56:46.2395 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 19:59:20.8511 Info Message Template Auto Format enabled
+2022-06-27 19:59:20.8511 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 19:59:20.9270 Info Adding target FileTarget(Name=allfile)
+2022-06-27 19:59:20.9270 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 19:59:20.9270 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 19:59:20.9543 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 20:02:10.3095 Info Message Template Auto Format enabled
+2022-06-27 20:02:10.3235 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 20:02:10.4250 Info Adding target FileTarget(Name=allfile)
+2022-06-27 20:02:10.4250 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 20:02:10.4250 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 20:02:10.5064 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 20:12:10.2066 Info Message Template Auto Format enabled
+2022-06-27 20:12:10.2854 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 20:12:10.6306 Info Adding target FileTarget(Name=allfile)
+2022-06-27 20:12:10.6510 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 20:12:10.6642 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 20:12:10.8034 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-27 23:32:25.3124 Info Message Template Auto Format enabled
+2022-06-27 23:32:25.3194 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-27 23:32:25.3541 Info Adding target FileTarget(Name=allfile)
+2022-06-27 23:32:25.3541 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-27 23:32:25.3541 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-27 23:32:25.3848 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-28 09:17:59.3447 Info Message Template Auto Format enabled
+2022-06-28 09:17:59.3598 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-28 09:17:59.4345 Info Adding target FileTarget(Name=allfile)
+2022-06-28 09:17:59.4345 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-28 09:17:59.4345 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-28 09:17:59.4753 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config
+2022-06-28 09:21:48.1083 Info Message Template Auto Format enabled
+2022-06-28 09:21:48.1361 Info Loading assembly: NLog.Web.AspNetCore
+2022-06-28 09:21:48.2968 Info Adding target FileTarget(Name=allfile)
+2022-06-28 09:21:48.3021 Info Adding target FileTarget(Name=ownFile-web)
+2022-06-28 09:21:48.3021 Info Adding target ConsoleTarget(Name=lifetimeConsole)
+2022-06-28 09:21:48.3979 Info Validating config: TargetNames=allfile, lifetimeConsole, ownFile-web, ConfigItems=60, FilePath=C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\bin\Debug\net6.0\NLog.config

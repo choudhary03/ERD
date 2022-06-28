@@ -15,7 +15,7 @@ using AutoMapper;
 
 namespace ERD.Controllers
 {
-    [Authorize (Roles = "SuperAdmin")]
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -89,6 +89,13 @@ namespace ERD.Controllers
         //return View(ListOfActivity);
 
         //}
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

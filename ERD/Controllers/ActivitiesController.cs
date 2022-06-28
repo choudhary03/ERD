@@ -8,11 +8,11 @@ using Microsoft.EntityFrameworkCore;
 using Refreshment_Dashboard.Models;
 using ERD.Services;
 using ERD.Models;
-
-
+using Microsoft.AspNetCore.Authorization;
 
 namespace ERD.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class ActivitiesController : Controller
     {
         private readonly ERDContext _context;
@@ -190,5 +190,12 @@ namespace ERD.Controllers
         //{
         //    return _context.Activitys.Any(e => e.ID == id);
         //}
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
     }
 }

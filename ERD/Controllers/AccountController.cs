@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERD.Controllers
 {
+    [Authorize (Roles = "SuperAdmin")]
     public class AccountController : Controller
     {
 
@@ -16,6 +18,13 @@ namespace ERD.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
         {
             return View();
         }
