@@ -1,0 +1,84 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@model Refreshment_Dashboard.Models.ContactUs
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center><h1>Feedback / Contact Us</h1></center>
+
+
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="input_fields_wrap">
+                <button class="add_field_button">Add Comment / Feedback</button>
+                <br />
+                @*<div><input type="text" name="mytext[]" style="height:120px; width:411px;"></div>*@
+            </div>
+
+            <br />
+
+            <script>
+                    $(document).ready(function() {
+                    var max_fields      = 2;
+                    var wrapper         = $(".input_fields_wrap");
+                    var add_button      = $(".add_field_button");
+
+                    var x = 1;
+
+
+                   $(add_button).click(function(e){
+                        e.preventDefault();
+                        if(x < max_fields){
+                            $(wrapper).append('<div> <input type="text" name="mytext[]" style="height:120px; width:411px;"/><a href="#" class="remove_field">Remove</a></div>');
+                            x++;
+                      }
+                    });
+
+                    $(wrapper).on("click",".remove_field", function(e){
+
+                        e.preventDefault();
+                        $(this).parent('div').remove();
+                        x--;
+                    })
+                });
+            </script>
+
+            <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-primary" onclick="changeColor()">
+            </div>
+
+            <script>
+                function changeColor(){
+                    document.getElementById('btn').style.backgroundColor="blue";
+                    document.getElementById('btn').style.backgroundColor="green";
+                }
+            </script>
+
+        </form>
+    </div>
+</div>
+
