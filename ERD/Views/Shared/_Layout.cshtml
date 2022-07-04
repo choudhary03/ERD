@@ -51,12 +51,13 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="ContactUs" asp-action="Index">Contact Us</a>
+                                <a class="nav-link" asp-area="" asp-controller="Venues" asp-action="Index"> Venues</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-controller="Venues" asp-action="Index"> Venues</a>
+                                <a class="nav-link" asp-area="" asp-controller="ContactUs" asp-action="Index">Contact Us</a>
                             </li>
+
                             @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
                             {
                                 <li class="nav-item">
