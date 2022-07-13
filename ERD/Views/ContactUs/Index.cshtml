@@ -49,7 +49,6 @@
 
                     var x = 1;
 
-
                    $(add_button).click(function(e){
                         e.preventDefault();
                         if(x < max_fields){
@@ -79,10 +78,10 @@
                     background-color: #04AA6D;
                     border: none;
                     border-radius: 8px;
-                    box-shadow: 0 9px #999;
+                    box-shadow: 0 5px #999;
                 }
 
-                    .btnfunction:hover {
+                .btnfunction:hover {
                         background-color: red;
                         cursor: pointer;
                     }
@@ -94,16 +93,13 @@
 
             <script>
                 const btn = document.getElementById('btn');
-
                 let index = 0;
-
-                const colors = ['green', 'blue'];
-
+                const colors = ['teal', 'blue'];
                 btn.addEventListener('click', function onClick() {
-                  btn.style.backgroundColor = colors[index];
+                  btn.style.backgroundColor = colors[index]; 
                   btn.style.color = 'white';
-
                   index = index >= colors.length - 1 ? 0 : index + 1;
+                  alert("Feedback Submitted Successfully!")
                 });
             </script>
 

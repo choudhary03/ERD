@@ -1,0 +1,53 @@
+﻿ <div class= "btn_container">
+        <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="leftClick()">Left</button>
+            <button type="button" class="toggle-btn" onclick="rightClick()">Right</button>
+        </div>
+    </div>
+
+    <style> 
+
+    .button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    background: #fff
+    }
+
+    .toggle-btn {
+    padding: 10px 40px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    text-align: center;
+    }
+
+    #btn {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #e67e22;
+    border-radius: 30px;
+    transition: .5s;
+    }
+    </style>
+
+    <script>
+        var btn = document.getElementById('btn')
+        function leftClick() {
+            btn.style.left = '0'
+        }
+        
+        function rightClick() {
+        btn.style.left = '110px'
+        }
+    </script>
+
+    </div>

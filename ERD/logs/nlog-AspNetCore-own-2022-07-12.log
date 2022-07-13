@@ -1,0 +1,52 @@
+2022-07-12 09:26:08.0633|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-07-12 09:26:17.3622|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-07-12 09:26:17.4134|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:26:17.4369|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:26:17.4390|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:26:20.5527|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-07-12 09:26:25.5583|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:31:54.0124|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-07-12 09:32:00.6198|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-07-12 09:32:00.6492|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:32:00.6646|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:32:00.6646|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:32:03.9682|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-07-12 09:32:04.8453|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:32:39.0654|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/Index|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:36:57.4737|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-07-12 09:37:03.5058|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-07-12 09:37:03.5807|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:37:03.5807|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:37:03.5807|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:37:05.8979|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-07-12 09:37:07.8890|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:41:06.1873|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-07-12 09:41:13.8546|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-07-12 09:41:13.9820|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:41:13.9861|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:41:13.9861|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:41:29.8601|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-07-12 09:41:30.8716|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:42:34.7298|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChart|action: ActivityChart|ERD.Controllers.HomeController..ctor
+2022-07-12 09:42:35.1967|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChartData|action: ActivityChartData|ERD.Controllers.HomeController..ctor
+2022-07-12 09:43:52.0782|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-07-12 09:44:00.5136|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-07-12 09:44:00.5566|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:44:00.5566|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:44:00.5632|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:44:02.7739|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-07-12 09:44:04.0151|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:44:08.5073|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChart|action: ActivityChart|ERD.Controllers.HomeController..ctor
+2022-07-12 09:44:11.5639|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChartData|action: ActivityChartData|ERD.Controllers.HomeController..ctor
+2022-07-12 09:44:24.0632|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChart|action: ActivityChart|ERD.Controllers.HomeController..ctor
+2022-07-12 09:47:05.9084|0|DEBUG|Program|init main |url: |action: |Program.<Main>$
+2022-07-12 09:47:10.3892|14|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5094 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync
+2022-07-12 09:47:10.4401|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:47:10.4401|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:47:10.4401|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\Radhe\Documents\GitHub\Backup\ERD Phase 1 last backup\ERD\ERD\ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+2022-07-12 09:47:12.6268|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/|action: |Microsoft.AspNetCore.HttpsPolicy.HttpsLoggingExtensions.FailedToDeterminePort
+2022-07-12 09:47:13.7462|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/|action: Index|ERD.Controllers.HomeController..ctor
+2022-07-12 09:47:24.1138|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChart|action: ActivityChart|ERD.Controllers.HomeController..ctor
+2022-07-12 09:47:24.8061|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChartData|action: ActivityChartData|ERD.Controllers.HomeController..ctor
+2022-07-12 09:47:28.8408|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChart|action: ActivityChart|ERD.Controllers.HomeController..ctor
+2022-07-12 09:47:29.1275|1|DEBUG|ERD.Controllers.HomeController|NLog injected into HomeController |url: http://localhost/Home/ActivityChartData|action: ActivityChartData|ERD.Controllers.HomeController..ctor

@@ -11668,6 +11668,7 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.6",
       "NLog >= 4.7.15",
       "NLog.Web.AspNetCore >= 4.14.0",
+      "Newtonsoft.Json >= 13.0.1",
       "Serilog.Extensions.Logging.File >= 2.0.0",
       "Swashbuckle.AspNetCore >= 6.3.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.3.1",
@@ -11764,6 +11765,10 @@
           "NLog.Web.AspNetCore": {
             "target": "Package",
             "version": "[4.14.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.1, )"
           },
           "Serilog.Extensions.Logging.File": {
             "target": "Package",

@@ -11,6 +11,10 @@
 @if (SignInManager.IsSignedIn(User))
 {
     <Center><h1>Employee Enrollment Details</h1></Center>
+    
+    <div class="form-group">
+        <input type="button" value="Chart View" style="float:right;" class="btn btn-primary" />
+    </div>
 
     @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
 {

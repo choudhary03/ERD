@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Authorization;
 using ERD.Services;
 using ERD.Models;
 using AutoMapper;
+using Newtonsoft.Json;
+using System.Data;
 
 
 namespace ERD.Controllers
@@ -51,6 +53,8 @@ namespace ERD.Controllers
 
         }
 
+
+
         [HttpGet]
         [AllowAnonymous]
         public IActionResult AccessDenied()
@@ -62,6 +66,53 @@ namespace ERD.Controllers
         {
             return View();
         }
+
+
+        public ActionResult GetChart()
+        {
+            return View();
+        }
+
+
+        public JsonResult DisplayChart()
+        {
+            var item = _context.Enrollments.Include(x => x.Employee).Include(x => x.Activity).ToList();
+            var mappedItem = _mapper.Map<List<EnrollmentViewModelAutomapper>>(item);
+
+            var enrollmentGroupByEmployee = mappedItem.GroupBy(c => c.Firstname).Select(d => new EnrollmentViewModelAutomapper
+            {
+                Firstname = d.Key,
+                ActivityList = d.Select(e => e.ActivityName).ToList(),
+                ActivityCount = d.Select(f => f.ActivityList).Count(),
+                ActivityCounterList = CountMod(d.Select(g => g.ActivityName).ToList())
+            });
+            return Json(enrollmentGroupByEmployee);
+
+        }
+        public List<ActivityCounter> CountMod(List<string> enrolledActivity)
+        {
+            List<ActivityCounter> result = new List<ActivityCounter>();
+            var listOfActivity = _context.Activitys.Select(x => x.Name).ToList();
+
+            foreach (var row in listOfActivity)
+            {
+                result.Add(new ActivityCounter { Name = row, Counter = 0 });
+            }
+            foreach (var row in result)
+            {
+                foreach (var col in enrolledActivity)
+                {
+                    if (row.Name == col)
+                    {
+                        row.Counter = 1;
+                        break;
+                    }
+                }
+            }
+            return result;
+        }
+
+
 
     }
 }
