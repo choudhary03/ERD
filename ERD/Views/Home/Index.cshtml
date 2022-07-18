@@ -8,54 +8,156 @@
 @{
     ViewData["Title"] = "Index";
 }
+
 @if (SignInManager.IsSignedIn(User))
 {
     <Center><h1>Employee Enrollment Details</h1></Center>
+        
     
-    <div class="form-group">
-        <input type="button" value="Chart View" style="float:right;" class="btn btn-primary" />
-    </div>
+          <div id = "getchart" style="display:none" >
 
-    @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
-{
-    <p>
-        <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enroll An Employee</a>
-    </p>
-}
+            <style>
+            </style>
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Employee Name</th>
-                <th>Activities Enrolled</th>
-            </tr>
-        </thead>
-        <tbody>
+                <link rel="stylesheet" type="text/css" href="index.css">
+                <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <script>
+                      $(document).ready(function () {
+                         $.ajax({
+                           type: "GET",
+                             dataType: "json",
+                             contentType: "application/json",
+                             url: '@Url.Action("DisplayChart", "Home")',
+                             success: function (result) {
+                             google.charts.load('current', {'packages': ['corechart']});
+                             google.charts.setOnLoadCallback(function () {
+                               drawChart(result);
+                             });  
+                         }
+                     
+                     });
+                 
+                 });
+                    function drawChart(result) {
+                        var data = new google.visualization.DataTable();
+                          data.addColumn('string', 'Employee Name');
 
-            @foreach (var item in Model)
-            {
-                var activityNameList = "";
-                <tr>
-                    <td>
-                        @item.Firstname
-                    </td>
-                    @if (item.ActivityList != null)
-                    {
-                        activityNameList = string.Join(", ", item.ActivityList);
+                        var dataArray = [];
+                        var column=true;
+
+                        $.each(result, function (i, obj) {
+                            dataArray.push([obj.firstname, obj.activityCount]);
+                            if(column)
+                            {
+                                $.each(obj.activityCounterList , function(j,obj2) {
+                                    data.addColumn('number', obj2.name);
+                                });
+                                column=false;
+                            }
+                        });
+
+                        $.each(result, function (i, obj) {
+                            dataArray=[];
+                            dataArray.push(obj.firstname);
+                             $.each(obj.activityCounterList , function(j,obj2) {
+                                    dataArray.push(parseInt(obj2.counter));
+                                });
+                                console.log(dataArray);
+                                data.addRow(dataArray);
+                        });
+
+
+                        var options = {
+                            isStacked: 'percent'
+                        };
+
+                        var columnChart = new google.visualization.ColumnChart(document.getElementById('viewchart'));
+                        columnChart.draw(data, options);
                     }
-                    <td>
-                        @activityNameList
-                    </td>
-                </tr>
-            }
+                    </script>
+                          <div id="viewchart" style="width: 900px; height: 400px;"></div>
+                      </div>
 
-        </tbody>
-    </table>
-}
-else
-{
-    <li class="nav-item">
-        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-route = asp-page="/Account/Login">Login</a>
+
+            @*<script>
+                const btn = document.getElementById('btn');
+                $(document).ready(function(){
+                    $("button").on('click',function(){
+                        $("#showIndex").toggle();
+                    });
+                });
+            </script>*@
+
+
+                  <script>
+                    function chartFunction() {
+                      var x = document.getElementById("getchart");
+                      if (x.style.display === "none") {
+                        x.style.display = "block";
+                      } else {
+                        x.style.display = "none";
+                      }
+
+                      var y = document.getElementById("showIndex");
+                      if (y.style.display === "none") {
+                        y.style.display = "block";
+                      } else {
+                        y.style.display = "none";
+                      }
+
+                    }
+                </script>
+
+
+            @if (SignInManager.IsSignedIn(User) && User.IsInRole("SuperAdmin"))
+            {
+                <p>
+                    <a class="nav-link" asp-area="" asp-controller="Enrollments" asp-action="Index">Enroll An Employee</a>
+                </p>
+            }
+                @*<div class="form-group">
+                    <input type="submit" id="btn" class="btn btn-primary" value="SeeChart" style="float:right;">
+                </div>*@
+
+                <button onclick="chartFunction()">View Chart</button>
+
+                 <div id="showIndex">
     
-    </li>    
-}
+                     <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Employee Name</th>
+                                <th>Activities Enrolled</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model)
+                            {
+                                var activityNameList = "";
+                                <tr>
+                                    <td>
+                                        @item.Firstname
+                                    </td>
+                                    @if (item.ActivityList != null)
+                                    {
+                                        activityNameList = string.Join(", ", item.ActivityList);
+                                    }
+                                    <td>
+                                        @activityNameList
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+    else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="login" asp-area="Identity" asp-route = asp-page="/Account/Login">Login</a>
+    
+            </li>    
+        }

@@ -7,6 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Home\jsChart.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Home\jsChart.js">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Bootstrap.Multiselect" Version="1.1.1" />
     <PackageReference Include="jQuery" Version="3.6.0" />

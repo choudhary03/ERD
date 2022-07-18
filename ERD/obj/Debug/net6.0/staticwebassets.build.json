@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QYhQjvSGpfBzcshev8/QmY3qxSpxmN4l367EaXO7jRM=",
+  "Hash": "8CJKd25DyvXyVo59mjO3HnYN3pZZlSy15xkcrPUToT4=",
   "Source": "ERD",
   "BasePath": "_content/ERD",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Radhe\\Documents\\GitHub\\Backup\\ERD Phase 1 last backup\\ERD\\ERD\\wwwroot\\js\\jsChart.js",
+      "SourceId": "ERD",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Radhe\\Documents\\GitHub\\Backup\\ERD Phase 1 last backup\\ERD\\ERD\\wwwroot\\",
+      "BasePath": "_content/ERD",
+      "RelativePath": "js/jsChart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jsChart.js"
     },
     {
       "Identity": "C:\\Users\\Radhe\\Documents\\GitHub\\Backup\\ERD Phase 1 last backup\\ERD\\ERD\\wwwroot\\js\\site.js",
